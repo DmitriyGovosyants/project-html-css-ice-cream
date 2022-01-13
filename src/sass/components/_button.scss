@@ -8,6 +8,7 @@ button {
   color: var(--accent-color);
   border: none;
   border-radius: 20px;
+  transition: background-color var(--transition-time) var(--transition-function);
 
   &:hover,
   &:focus {
