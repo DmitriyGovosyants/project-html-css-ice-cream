@@ -1,32 +1,29 @@
 :root {
+  --accent-color: #d41443;
+  --secondary-color: #ffa5ba;
   --white-color: #ffffff;
-  --black-color: #000000;
-  --header-main-color: #ffb8ca;
-  --header-secondary-color: #ffa5ba;
-  --section-main-background-color: #fff5f6;
-  --section-secondary-background-color: #e5e5e5;
-  --h2-main-text-color: #d41443;
-  --h2-secondary-text-color: #ffa5ba;
-  --text-color: #907e82;
+  --main-bgc: #fff5f6;
+  --secondary-bgc: #ffb8ca;
+  --third-bgc: #f0d1a5;
+  --fourth-bgc: #c2e297;
+  --text-main-color: #000000;
+  --text-secondary-color: #907e82;
+  --hero-circle-color: #ffa5ba;
 
-  --products-first-bgc: #ffb8ca;
-  --products-second-bgc: #f0d1a5;
-  --products-third-bgc: #c2e297;
+  --slider-bgc: #fafafa;
+  --slider-hover: #c7133e;
+  --slider-dots: #d9d9d9;
+  --slider-dots-hover: #d31342;
+  --figure-line-color: #e1e1e1;
 
-  --customer-reviews-bgc: #fafafa;
-  --customer-reviews-slider-hover: #c7133e;
-  --customer-reviews-dots: #d9d9d9;
-  --customer-reviews-dots-hover: #d31342;
-  --customer-reviews-before: #e1e1e1;
-
-  --contacts-second-title: #c2e297;
-  --contacts-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  --box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  --mobile-shadow: -8px 0px 20px rgba(0, 0, 0, 0.25);
+  --mobile-bgc: #e17992;
 
   --social-icon-bgc: #fea5bb;
 
-  --button-main-color: #c7133e;
-  --button-hover-color: #ecebeb;
-  --button-contacts-hover: #d41342;
+  --button-second-color: #c7133e;
+  --button-main-hover-color: #ecebeb;
 
   --transition-time: 300ms;
   --transition-function: cubic-bezier(0.2, 0.4, 0.9, 0.1);
