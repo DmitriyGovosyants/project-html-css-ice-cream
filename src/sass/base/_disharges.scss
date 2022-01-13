@@ -20,3 +20,16 @@ input {
   padding: 0;
   outline: none;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--text-main-color);
+
+  font-family: DM Sans, sans-serif;
+}
