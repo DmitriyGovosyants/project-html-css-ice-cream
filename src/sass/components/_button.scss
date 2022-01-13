@@ -1,0 +1,16 @@
+button {
+  padding: 7px 13px;
+
+  font-family: DM Sans, sans-serif;
+  @include font-size(8, 10, 0);
+
+  background-color: var(--white-color);
+  color: var(--accent-color);
+  border: none;
+  border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-main-hover-color);
+  }
+}
