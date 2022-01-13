@@ -58,7 +58,7 @@
 }
 
 // Visuallity hidden
-@mixin visuallity-hidden {
+@mixin visuallity-hidden() {
   position: absolute;
   white-space: nowrap;
   width: 1px;
