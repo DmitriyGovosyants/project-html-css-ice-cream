@@ -1,19 +1,20 @@
 .title {
   font-weight: 400;
+  font-family: Titan One;
 
   text-align: center; //не уверен, на усмотрение тимлида
   text-transform: uppercase;
   color: var(--accent-color);
 
   @include mq(mobile-only) {
-    @include font-size(34, 39px, 0.04em);
+    @include font-size(34, 39, 0.04);
   }
 
   @include mq(tablet-only) {
-    @include font-size(48, 55px, 0.04em);
+    @include font-size(48, 55, 0.04);
   }
 
   @include mq(desktop) {
-    @include font-size(58, 66px, 0.06em);
+    @include font-size(58, 66, 0.06);
   }
 }
