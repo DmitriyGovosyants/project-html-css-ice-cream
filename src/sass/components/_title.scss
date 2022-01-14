@@ -1,16 +1,14 @@
 .title {
-  font-family: Titan One;
+  font-family: Titan One, sans-serif;
   font-weight: 400;
 
   text-align: center; //не уверен, на усмотрение тимлида
   text-transform: uppercase;
   color: var(--accent-color);
 
-  @include mq(mobile-only) {
-    @include font-size(34, 39, 0.04);
-  }
+  @include font-size(34, 39, 0.04);
 
-  @include mq(tablet-only) {
+  @include mq(tablet) {
     @include font-size(48, 55, 0.04);
   }
 
