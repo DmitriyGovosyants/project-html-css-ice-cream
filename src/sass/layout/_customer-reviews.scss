@@ -1,0 +1,65 @@
+// .rubber-indicator {
+//   width: 100%;
+//   position: relative;
+// }
+
+// // .page-dots {
+// //   list-style: none;
+// //   display: inline-block;
+// //   padding: 10px 20px;
+// //   border-radius: 40px;
+// //   position: absolute;
+// //   z-index: 2;
+// //   width: 100%;
+// //   max-width: 190px;
+// //   text-align: center;
+// //   top: 50%;
+// //   left: 50%;
+// //   transform: translateY(-100%) translateX(-50%);
+  
+// //   .dot {
+// //     display: inline-block;
+// //     vertical-align: middle;
+// //     width: 10px;
+// //     height: 10px;
+// //     margin: 0 8px;
+// //     background: blue;
+// //     border-radius: 50%;
+// //     cursor: pointer;
+// //     border: 4px solid transparent;
+// //     transition: all .4s cubic-bezier(.3, 0, 0, 1.3);
+// //   }
+  
+// //   .current {
+// //     background: red;
+// //     position: relative;
+// //     transform: scale(3);
+// //     border-color: green;
+// //   }
+// // }
+
+// .page-dots {
+//     list-style: none;
+//     display: inline-block;
+//     padding: 10px 20px;
+//     position: absolute;
+//     list-style: none;
+//     max-width: 190px;
+//     text-align: center;
+//     top: 50%;
+//     left: 50%;
+//     transform: translateY(-100%) translateX(-50%);
+// }
+
+// .dot {
+//     display: inline-block;
+//     vertical-align: middle;
+//     width: 12px;
+//     height: 12px;
+//     border-radius: 50%;
+//     background-color: blue;
+//     cursor: pointer;
+//     &:not(last-child) {
+//         margin-right: 18px
+//     }
+// }
