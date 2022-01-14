@@ -11,7 +11,7 @@
   @if $letter-spacing==normal {
     letter-spacing: normal;
   } @else {
-    letter-spacing: #{$letter-spacing / $font-size}em;
+    letter-spacing: #{$letter-spacing}em;
   }
 }
 
