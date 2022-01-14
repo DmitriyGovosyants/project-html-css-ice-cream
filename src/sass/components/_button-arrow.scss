@@ -10,13 +10,13 @@
   border: none;
   background-color: var(--bgc-main);
   color: var(--accent-color);
+
+  &--small {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .button-arrow__icon {
   fill: currentColor;
-}
-
-.button-arrow--small {
-  width: 18px;
-  height: 18px;
 }
