@@ -13,14 +13,14 @@
   &:focus {
     background-color: var(--button-main-hover-color);
   }
-}
 
-.button--dark {
-  color: var(--text-fourth-color);
-  background-color: var(--accent-color);
+  &--dark {
+    color: var(--text-fourth-color);
+    background-color: var(--accent-color);
 
-  &:hover,
-  &:focus {
-    background-color: var(--button-second-hover-color);
+    &:hover,
+    &:focus {
+      background-color: var(--button-second-hover-color);
+    }
   }
 }
