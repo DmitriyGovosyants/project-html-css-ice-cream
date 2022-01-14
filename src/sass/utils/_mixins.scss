@@ -5,7 +5,7 @@
   @if $line-height==normal {
     line-height: normal;
   } @else {
-    line-height: $line-height / $font-size;
+    line-height: calc($line-height / $font-size);
   }
 
   @if $letter-spacing==normal {
