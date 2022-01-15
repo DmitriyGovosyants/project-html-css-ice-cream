@@ -1,7 +1,4 @@
 .hero {
-  position: relative;
-  z-index: -2;
-
   padding-top: 193px;
   padding-bottom: 160px;
 
@@ -18,36 +15,12 @@
     padding-top: 156px;
     padding-bottom: 56px;
   }
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 52px;
-    right: 267px;
-
-    width: 538px;
-    height: 538px;
-    border-radius: 500px;
-    background-color: #ffa5ba;
-
-    animation: circle 6000ms var(--animation-timing-function);
-    animation-iteration-count: 1;
-
-    @keyframes circle {
-      0% {
-        transform: scale(5);
-      }
-      70% {
-        transform: scale(5);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-  }
 }
 
 .hero__container {
+  position: relative;
+  z-index: 0;
+
   display: flex;
   justify-content: space-between;
 }
@@ -253,21 +226,85 @@
   }
 }
 
-.hero__img {
-  // circle
+.hero__img-milk {
+  @include mq(mobile-only) {
+    display: none;
+  }
+
+  position: absolute;
+  left: 36px;
+  bottom: 0;
+  z-index: 1;
+
+  @include mq(desktop) {
+    left: 77px;
+  }
+}
+
+.hero__img-ice-cream {
+  position: absolute;
+  right: 32px;
+  bottom: -160px;
+  z-index: -1;
+
+  animation: ice-cream 2500ms 1 linear;
+
+  @include mq(tablet) {
+    right: 247px;
+    bottom: -34px;
+  }
+
+  @include mq(desktop) {
+    right: 450px;
+    bottom: -56px;
+  }
+
+  @keyframes ice-cream {
+    0% {
+      transform: translateY(100%);
+    }
+    40% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
   &::before {
     content: '';
     position: absolute;
-    top: 52px;
-    right: 267px;
+    top: -9px;
+    left: -81px;
+    z-index: -1;
 
-    width: 538px;
-    height: 538px;
-    border-radius: 500px;
-    background-color: #ffa5ba;
+    width: 346px;
+    height: 344px;
 
-    animation: circle 6000ms var(--animation-timing-function);
-    animation-iteration-count: 1;
+    background-color: var(--hero-circle-color);
+    border-radius: 200px;
+
+    animation: circle 3700ms 1 var(--transition-function);
+
+    @include mq(tablet) {
+      top: -32px;
+      left: -71px;
+
+      width: 324px;
+      height: 322px;
+
+      animation: circle 6000ms 1 var(--transition-function);
+    }
+
+    @include mq(desktop) {
+      top: -56px;
+      left: -119px;
+
+      width: 538px;
+      height: 538px;
+
+      border-radius: 300px;
+    }
 
     @keyframes circle {
       0% {
@@ -282,26 +319,28 @@
     }
   }
 }
-// milk
-.pic-1 {
+
+.hero__img-squirrel {
+  @include mq(mobile-only) {
+    display: none;
+  }
+
   position: absolute;
-  left: 77px;
-  bottom: 45px;
-  z-index: 1;
-}
-// squirrel
-.pic-2 {
-  position: absolute;
-  right: 109px;
-  bottom: 0;
+  right: 34px;
+  bottom: -34px;
   z-index: 1;
 
   cursor: pointer;
 
-  transition: transform var(--animation-duration) var(--animation-timing-function);
+  transition: transform var(--transition-time) ease-out;
 
   animation: squirrel 7000ms linear;
   animation-iteration-count: 1;
+
+  @include mq(desktop) {
+    right: 109px;
+    bottom: -56px;
+  }
 
   @keyframes squirrel {
     0% {
@@ -375,10 +414,20 @@
 // heart
 .love-animation {
   position: absolute;
-  bottom: 100px;
-  right: 250px;
+  bottom: -100px;
+  right: 10px;
   width: 4rem;
   height: 2rem;
+
+  @include mq(tablet) {
+    bottom: 30px;
+    right: 110px;
+  }
+
+  @include mq(desktop) {
+    bottom: 100px;
+    right: 250px;
+  }
 }
 
 .love-animation__heart {
@@ -423,28 +472,5 @@
   }
   100% {
     opacity: 0;
-  }
-}
-
-// ice-cream
-.pic-3 {
-  position: absolute;
-  right: 450px;
-  bottom: 0;
-  z-index: 1;
-
-  animation: ice-cream 2500ms linear;
-  animation-iteration-count: 1;
-
-  @keyframes ice-cream {
-    0% {
-      transform: translateY(100%);
-    }
-    40% {
-      transform: translateY(100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
   }
 }
