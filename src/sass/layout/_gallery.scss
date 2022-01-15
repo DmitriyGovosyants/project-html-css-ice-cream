@@ -1,11 +1,5 @@
 // Gallery
 
-// .gallery__title {
-//     @include visuallity-hidden;
-// }
-
-// source {
-//     display: block;
-//     max-width: 100%;
-//     height: auto;
-// }
+.gallery__title {
+    @include visuallity-hidden;
+}
