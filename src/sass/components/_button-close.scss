@@ -1,0 +1,35 @@
+.button-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  color: var(--accent-color);
+
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+
+  transition: color var(--transition-time) var(--transition-function),
+    border var(--transition-time) var(--transition-function);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 2px solid var(--accent-color);
+  }
+
+  &--mobile {
+    color: var(--bgc-main);
+
+    &:hover,
+    &:focus {
+      border: 2px solid var(--bgc-main);
+    }
+  }
+}
+
+.button-close__icon {
+  fill: currentColor;
+}
