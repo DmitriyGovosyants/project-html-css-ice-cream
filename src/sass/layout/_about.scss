@@ -7,10 +7,18 @@
 .about__title {
   margin-bottom: 25px;
 }
+.about__title-mobile {
+  @include visuallity-hidden();
+}
 .about__content {
   /* display: flex;
   flex-direction: column;
   align-items: center; */
+}
+.about__text-container {
+  justify-content: left;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .about__img {
   @include mq(mobile-only) {
@@ -25,4 +33,37 @@
     width: 516px;
     height: 516px;
   }
+}
+.text1 {
+  font-weight: 500;
+  @include font-size(12, 19.44);
+
+  margin-bottom: 50px;
+}
+.text2 {
+  font-weight: 500;
+  @include font-size(12, 19.44);
+  color: var(--text-second-color);
+  text-align: left;
+  margin-bottom: 47px;
+}
+.moreless-button {
+  font-weight: 500;
+  @include font-size(16, 20.83);
+  color: var(--accent-color);
+}
+.moreless-button__icon {
+  fill: currentColor;
+  margin-left: 13.62px;
+}
+.qwerty {
+  // margin: 0 auto;
+  width: 176px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: var(--bgc-main);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
