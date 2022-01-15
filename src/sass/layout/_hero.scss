@@ -282,7 +282,7 @@
     height: 344px;
 
     background-color: var(--hero-circle-color);
-    border-radius: 200px;
+    border-radius: 50%;
 
     animation: circle 3700ms 1 var(--transition-function);
 
@@ -302,8 +302,6 @@
 
       width: 538px;
       height: 538px;
-
-      border-radius: 300px;
     }
 
     @keyframes circle {
