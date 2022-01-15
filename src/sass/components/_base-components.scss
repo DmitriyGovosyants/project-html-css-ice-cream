@@ -3,7 +3,6 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-
   @include mq(mobile) {
     width: 480px;
   }
