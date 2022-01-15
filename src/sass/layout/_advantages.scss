@@ -1,0 +1,139 @@
+.advantages {
+  @include mq(mobile-only) {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  position: absolute;
+  background-color: var(--bgc-second);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.advantages__title {
+  @include visuallity-hidden();
+}
+
+.advantages__box {
+  @include mq(tablet-only) {
+    display: flex;
+    margin-left: -60px;
+    padding: 33px 76px 70px 36px;
+  }
+  @include mq(desktop) {
+    display: flex;
+    margin-left: -30px;
+    padding: 20px 115px 70px 115px;
+  }
+}
+
+.advantages__item {
+  @include mq(mobile-only) {
+    padding-left: 20px;
+    padding-right: 70px;
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+  @include mq(tablet-only) {
+    flex-basis: calc(100% / 3 - 60px);
+    justify-content: left;
+    margin-left: 60px;
+  }
+  @include mq(desktop) {
+    flex-basis: calc(100% / 3 - 30px);
+    justify-content: left;
+    margin-left: 30px;
+  }
+}
+
+.advantages__discription {
+  @include font-size(36, 41, 0.04);
+  font-weight: 400;
+  font-family: Titan One, sans-serif;
+  color: var(--accent-color);
+  @include mq(mobile-only) {
+    margin-bottom: 20px;
+  }
+  @include mq(tablet-only) {
+    margin-bottom: 13px;
+    @include font-size(48, 55, 0.04);
+  }
+  @include mq(desktop) {
+    margin-bottom: 15px;
+    @include font-size(58, 66, 0.04);
+  }
+}
+
+.advantages__text {
+  @include font-size(12, 20, 0.02);
+  font-weight: 700;
+  font-family: DM Sans, sans-serif;
+  color: var(--text-main-color);
+  @include mq(tablet-only) {
+    @include font-size(14, 24, 0.02);
+  }
+  @include mq(desktop) {
+    @include font-size(16, 28, 0.02);
+  }
+  @include mq(mobile-only) {
+    margin-bottom: 38px;
+  }
+}
+
+.advantages__discription-first:before {
+  @include mq(mobile-only) {
+    margin-bottom: 20px;
+  }
+  @include mq(tablet-only) {
+    margin-bottom: 36px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 40px;
+  }
+  content: '';
+  position: relative;
+  background-image: url('../images/advantages/cow-x1.png');
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+}
+
+.advantages__discription-second:before {
+  @include mq(mobile-only) {
+    margin-bottom: 20px;
+  }
+  @include mq(tablet-only) {
+    margin-bottom: 36px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 40px;
+  }
+
+  content: '';
+  position: relative;
+  background-image: url('../images/advantages/apple-x1.png');
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+}
+
+.advantages__discription-third:before {
+  @include mq(mobile-only) {
+    margin-bottom: 20px;
+  }
+  @include mq(tablet-only) {
+    margin-bottom: 36px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 40px;
+  }
+  content: '';
+  position: relative;
+  background-image: url('../images/advantages/heart-x1.png');
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+}
