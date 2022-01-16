@@ -1,0 +1,86 @@
+.buy-modal {
+  position: relative;
+
+  padding: 20px;
+
+  .backdrop--hidden & {
+    transform: scale(1.1);
+  }
+
+  @include mq(mobile-only) {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include mq(tablet) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    max-width: 650px;
+
+    transform: translate(-50%, -50%) scale(1);
+
+    .backdrop--hidden & {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+  @media screen and (max-width: 1199px) and (max-height: 620px) and (orientation: landscape) {
+    position: static;
+
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+
+    transform: scale(1);
+
+    .backdrop--hidden & {
+      transform: scale(1.1);
+    }
+  }
+  @include mq(desktop) {
+    max-width: 850px;
+  }
+}
+
+.buy-form__name,
+.buy-form__phone,
+.buy-form__email,
+.buy-form__address,
+.buy-form__product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buy-form__text {
+  @include mq(tablet) {
+    text-align: start;
+    width: 200px;
+  }
+}
+
+.buy-form__input {
+  @include mq(mobile-only) {
+    width: 100%;
+  }
+
+  @include mq(tablet) {
+    .buy-form__phone & {
+      // width: 100%;
+    }
+  }
+}
+
+.buy-form__product-wrapper {
+  display: block;
+  flex-direction: column;
+}
+
+.buy-form__product-item {
+  display: block;
+}
+
+.buy-form__success-message {
+  font-size: 40px;
+}

@@ -1,0 +1,40 @@
+.modal-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 90%;
+  max-width: 640px;
+
+  padding: 40px 15px;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  .backdrop--hidden & {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  @media screen and (max-width: 1199px) and (max-height: 620px) and (orientation: landscape) {
+    position: static;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    transform: scale(1);
+
+    .backdrop--hidden & {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.modal-video__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-video__player {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
