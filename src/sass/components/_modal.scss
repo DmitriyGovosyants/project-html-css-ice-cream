@@ -14,6 +14,17 @@ body.modal-open {
   transition: transform var(--transition-time) var(--transition-function);
 }
 
+.modal__title {
+  @include font-size(28, 32, 0.05);
+
+  @include mq(tablet) {
+    @include font-size(32, 36, 0.05);
+  }
+  @include mq(desktop) {
+    @include font-size(40, 46, 0.05);
+  }
+}
+
 .modal__button-close {
   position: absolute;
   top: 8px;
