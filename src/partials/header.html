@@ -15,32 +15,41 @@
                 <li class="navigation__item"><a class="navigation__link" href="#contacts">Contact</a></li>
             </ul>
         </nav>
-        <button class="button-mobmenu" type="button" data-menu-button>
-            <svg class="button-mobmenu__icon" 
-            width="30" 
-            height="15"
-            aria-expanded="false" 
-            aria-label="Переключатель мобильного меню">
-                <use class="icon-menu" href="images/header-logo/symbol-defs.svg#icon-Burger"></use>
-                <use class="icon-cross" href="images/header-logo/symbol-defs.svg#icon-close"></use>
-            </svg>
-        </button>
-        <button class="button button--buy" type="button">
-            <span class="header__button-text">Buy now</span>
-            <span class="header__button-symbol">
-                <!-- <svg class="header__button-icon">
-                    <use href="images/icons.svg#button-arrow-icon"></use>
-                </svg> -->
-            </span>
-        </button>
-        <div class="mobile-menu" data-menu>
+        <div class="header__buttons-wrap">
+            <button class="button-mobmenu" type="button" open-menu>
+                <svg class="button-mobmenu__icon" 
+                width="20" 
+                height="20"
+                aria-expanded="false" 
+                aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="images/icons.svg#menu-button-icon"></use>
+                    <!-- <use class="icon-cross" href="images/icons.svg#close-menu-button-icon"></use> -->
+                </svg>
+            </button>
+            <button class="button button--buy" type="button">
+                <span class="button--buy__text">Buy now</span>
+                <span class="button--buy__symbol">
+                    <svg class="button--buy__icon">
+                        <use href="images/icons.svg#vector-icon"></use>
+                    </svg>
+                </span>
+            </button>
+        </div>
+        <div class="mobile-menu" mobile-menu>
+                <button class="button-close button-close--mobile mobile-menu__close-button" type="button" close-menu>
+                    <svg class="button-close__icon" width="14" height="14" aria-expanded="false"
+                        aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="images/icons.svg#close-menu-button-icon"></use>
+                        <!-- <use class="icon-cross" href="images/icons.svg#close-menu-button-icon"></use> -->
+                    </svg>
+                </button>
             <div class="mobile-menu__button-wrap">
                 <button class="button mobile-menu__button--buy" type="button">
-                    <span class="header__button-text">Buy now</span>
-                    <span class="header__button-symbol">
-                        <!-- <svg class="header__button-icon">
-                            <use href="images/icons.svg#button-arrow-icon"></use>
-                        </svg> -->
+                    <span class="button--buy__text">Buy now</span>
+                    <span class="button--buy__symbol">
+                        <svg class="button--buy__icon">
+                            <use href="images/icons.svg#vector-icon"></use>
+                        </svg>
                     </span>
                 </button>
             </div>
@@ -48,9 +57,12 @@
                 <ul class="mobile-menu__list">
                     <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#header">Home</a></li>
                     <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="/">About us</a></li>
-                    <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#about">How it’s made?</a></li>
-                    <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#products">Our products</a></li>
-                    <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#contacts">Contact</a></li>
+                    <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#about">How it’s made?</a>
+                    </li>
+                    <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#products">Our
+                            products</a></li>
+                    <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#contacts">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </div>
