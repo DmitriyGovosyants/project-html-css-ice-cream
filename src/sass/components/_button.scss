@@ -1,5 +1,6 @@
 .button {
   padding: 7px 13px;
+  // display: block;
 
   @include font-size(8, 10);
 
@@ -7,11 +8,19 @@
   color: var(--accent-color);
   border: none;
   border-radius: 20px;
-  transition: background-color var(--transition-time) var(--transition-function);
+
+  transition: background-color 200ms linear, transform 200ms linear;
 
   &:hover,
   &:focus {
+    transform: translateY(-3px);
     background-color: var(--button-main-hover-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 
   &--dark {
