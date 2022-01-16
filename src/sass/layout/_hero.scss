@@ -110,6 +110,7 @@
 
   @include mq(desktop) {
     min-width: 104px;
+    padding: 11px 13px;
 
     @include font-size(14, 18.23);
   }
@@ -293,7 +294,7 @@
       width: 324px;
       height: 322px;
 
-      animation: circle 6000ms 1 var(--transition-function);
+      animation: circle 5500ms 1 linear;
     }
 
     @include mq(desktop) {
@@ -306,10 +307,10 @@
 
     @keyframes circle {
       0% {
-        transform: scale(10);
+        transform: scale(8);
       }
-      70% {
-        transform: scale(5);
+      60% {
+        transform: scale(8);
       }
       100% {
         transform: scale(1);
