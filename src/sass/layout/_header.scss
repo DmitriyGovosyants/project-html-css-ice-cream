@@ -1,0 +1,242 @@
+.header__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  // overflow: hidden;
+
+  @include mq(mobile-only) {
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-top: 6px;
+  }
+
+  @include mq(tablet) {
+    padding-top: 37px;
+  }
+  @include mq(desktop) {
+    padding-left: 46px;
+  }
+}
+
+.logo {
+  @include mq(tablet) {
+    margin-right: auto;
+  }
+
+  @include mq(desktop) {
+    margin-right: 110px;
+  }
+}
+
+.navigation__list {
+  display: flex;
+  margin-right: 110px;
+  min-width: 541px;
+  @include mq(notDesktop) {
+    display: none;
+  }
+}
+
+.navigation__item {
+  flex-grow: 1;
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.navigation__link {
+  padding: 12px 0;
+  @include font-size(16, 21);
+  font-weight: 700;
+  color: var(--text-fourth-color);
+  transition: color var(--transition-time) var(--transition-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+// ! Скопированные базовые стили, после мержа удалить
+.button {
+  padding: 7px 13px;
+
+  @include font-size(8, 10);
+
+  background-color: var(--bgc-main);
+  color: var(--accent-color);
+  border: none;
+  border-radius: 20px;
+  transition: background-color var(--transition-time) var(--transition-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-main-hover-color);
+  }
+}
+// ! Скопированные базовые стили, после мержа удалить
+
+.button-mobmenu {
+  padding: 0;
+  padding-top: 5px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  color: var(--accent-color);
+  background-color: transparent;
+
+  z-index: 2;
+
+  @include mq(tablet) {
+    margin-right: 30px;
+  }
+
+  @include mq(desktop) {
+    display: none;
+  }
+}
+
+.button-mobmenu .icon-menu {
+  opacity: 1;
+  fill: currentColor;
+}
+
+.button-mobmenu .icon-cross {
+  // display: none;
+  opacity: 0;
+  transition: opacity 100ms var(--transition-function);
+  fill: var(--text-fourth-color);
+}
+
+.button-mobmenu.is-open .icon-cross {
+  // display: block;
+  opacity: 1;
+}
+
+.button-mobmenu.is-open .icon-menu {
+  // display: none;
+  opacity: 0;
+  transition: opacity 100ms var(--transition-function);
+}
+
+.button-mobmenu.is-open {
+  @include mq(tablet) {
+    position: absolute;
+    margin-right: 0;
+    top: 10px;
+    right: 25px;
+  }
+}
+
+.button--buy {
+  display: flex;
+  align-items: baseline;
+  // flex-grow: 1;
+
+  padding: 12px 37px;
+  min-width: 160px;
+
+  font-weight: 700;
+  @include font-size(16, 21);
+
+  @include mq(mobile-only) {
+    display: none;
+  }
+}
+
+// Mobile menu
+.mobile-menu {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform var(--transition-time) var(--transition-function);
+
+  min-width: 250px;
+  min-height: 502px;
+  padding-top: 60px;
+  padding-bottom: 171px;
+
+  background-color: var(--bgc-mobile);
+  overflow: hidden;
+
+  &.is-open {
+    display: block;
+    transform: translateX(0);
+
+    @include mq(desktop) {
+      display: none;
+    }
+  }
+
+  @include mq(tablet) {
+    min-width: 254px;
+    min-height: 1020px;
+    padding-bottom: 689px;
+  }
+
+  @include mq(desktop) {
+    display: none;
+  }
+}
+
+.mobile-menu__button-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-menu__button--buy {
+  padding: 12px 49px;
+  margin-bottom: 19px;
+  min-width: 209px;
+
+  font-weight: 700;
+  @include font-size(16, 21);
+
+  @include mq(tablet) {
+    min-width: 186px;
+  }
+}
+
+.header__button-text {
+  margin-right: 25px;
+  @include mq(tablet) {
+    margin-right: 10px;
+  }
+}
+
+.header__button-icon {
+  display: block;
+  width: 20px;
+  height: 12px;
+}
+
+.mobile-menu__item {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  // padding-left: 21px;
+
+  background-color: inherit;
+  transition: background-color var(--transition-time) var(--transition-function);
+  border-top: 1px solid #e18298;
+
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--bgc-main);
+  }
+}
+.mobile-menu__item:hover .mobile-menu__link {
+  color: var(--accent-color);
+}
+
+.mobile-menu__link {
+  padding-right: 125px;
+  padding-left: 21px;
+
+  @include font-size(14, 18);
+}

@@ -1,0 +1,59 @@
+<header id="header" class="header">
+    <div class="container header__container">
+        <a class="logo" href="/">
+            <img srcset="./images/header-logo/logo-x1.png 199w,
+                        ./images/header-logo/logo-x2.png 398w"
+            src="./images/header-logo/logo-x1.png" alt="Logo" width="199" height="50"
+            sizes="(min-width: 320px) 199px"/>
+        </a>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a class="navigation__link" href="#header">Home</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="/">About us</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#about">How it’s made?</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#products">Our products</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="button-mobmenu" type="button" data-menu-button>
+            <svg class="button-mobmenu__icon" 
+            width="30" 
+            height="15"
+            aria-expanded="false" 
+            aria-label="Переключатель мобильного меню">
+                <use class="icon-menu" href="images/header-logo/symbol-defs.svg#icon-Burger"></use>
+                <use class="icon-cross" href="images/header-logo/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button>
+        <button class="button button--buy" type="button">
+            <span class="header__button-text">Buy now</span>
+            <span class="header__button-symbol">
+                <!-- <svg class="header__button-icon">
+                    <use href="images/icons.svg#button-arrow-icon"></use>
+                </svg> -->
+            </span>
+        </button>
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu__button-wrap">
+                <button class="button mobile-menu__button--buy" type="button">
+                    <span class="header__button-text">Buy now</span>
+                    <span class="header__button-symbol">
+                        <!-- <svg class="header__button-icon">
+                            <use href="images/icons.svg#button-arrow-icon"></use>
+                        </svg> -->
+                    </span>
+                </button>
+            </div>
+            <nav class="navigation mobile-menu__navigation">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#header">Home</a></li>
+                    <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="/">About us</a></li>
+                    <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#about">How it’s made?</a></li>
+                    <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#products">Our products</a></li>
+                    <li class="mobile-menu__item"><a class="navigation__link mobile-menu__link" href="#contacts">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script src="./mobile-menu.js"></script>
+</header>
