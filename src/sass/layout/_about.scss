@@ -11,12 +11,16 @@
   @include visuallity-hidden();
 }
 .about__content {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .about__text-container {
-  justify-content: left;
+  display: block;
+  width: 280px;
+  justify-content: center;
   padding-left: 30px;
   padding-right: 30px;
 }
