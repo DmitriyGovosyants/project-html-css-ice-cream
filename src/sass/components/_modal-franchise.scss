@@ -44,6 +44,20 @@
   }
 }
 
+.franchise-modal__list {
+  // list-style-type: disc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.franchise-modal__item {
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+
 .franchise-form {
 }
 
