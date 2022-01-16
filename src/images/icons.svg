@@ -12,9 +12,8 @@
 <symbol id="white-button-arrow-icon" viewBox="0 0 22 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.49 3.2l13.696 12.8-13.696 12.8"></path>
 </symbol>
-<symbol id="button-close-icon" viewBox="0 0 32 32">
-<path d="M27.707 5.707c0.39-0.39 0.39-1.024 0-1.414s-1.024-0.39-1.414 0l-22 22c-0.39 0.39-0.39 1.024 0 1.414s1.024 0.39 1.414 0l22-22z"></path>
-<path d="M5.707 4.293c-0.39-0.39-1.024-0.39-1.414 0s-0.39 1.024 0 1.414l22 22c0.39 0.39 1.024 0.39 1.414 0s0.39-1.024 0-1.414l-22-22z"></path>
+<symbol id="close-menu-button-icon" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path>
 </symbol>
 <symbol id="facebook-icon" viewBox="0 0 32 32">
 <path d="M22.143 15.971h-4.033v14.865h-6.112v-14.865h-2.906v-5.222h2.906v-3.382c0-2.417 1.142-6.204 6.167-6.204l4.527 0.019v5.072h-3.284c-0.538 0-1.297 0.272-1.297 1.425v3.073h4.567l-0.534 5.219z"></path>
@@ -36,6 +35,9 @@
 </symbol>
 <symbol id="big-arrow-icon" viewBox="0 0 32 32">
 <path d="M27.59 14.79l-7.59-10c-0.369-0.441-0.92-0.72-1.537-0.72-1.105 0-2 0.895-2 2 0 0.426 0.133 0.822 0.361 1.146l-0.004-0.006 5.18 6.79h-16c-1.105 0-2 0.895-2 2s0.895 2 2 2v0h16l-5.17 6.79c-0.316 0.352-0.508 0.82-0.508 1.332 0 1.105 0.895 2 2 2 0.7 0 1.316-0.36 1.674-0.905l0.005-0.008 7.62-10c0.245-0.328 0.393-0.742 0.393-1.19 0-0.466-0.159-0.894-0.426-1.234l0.003 0.004z"></path>
+</symbol>
+<symbol id="vector-icon" viewBox="0 0 26 32">
+<path fill="none" style="stroke" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.826 12.8-16.826 12.8"></path>
 </symbol>
 </defs>
 </svg>

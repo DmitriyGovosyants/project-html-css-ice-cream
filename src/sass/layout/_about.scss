@@ -5,69 +5,153 @@
 }
 
 .about__title {
-  margin-bottom: 25px;
-}
-.about__title-mobile {
-  @include visuallity-hidden();
-}
-.about__content {
-  @include mq(tablet) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @include mq(mobile-only) {
+    margin-bottom: 26px;
+  }
+  @include mq(tablet-only) {
+    margin-bottom: 50px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 26px;
   }
 }
-.about__text-container {
-  display: block;
-  width: 280px;
-  justify-content: center;
-  padding-left: 30px;
-  padding-right: 30px;
+
+.about__content {
+  display: flex;
+  @include mq(mobile-only) {
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  @include mq(tablet) {
+    align-items: flex-start;
+    // justify-content: center;
+  }
 }
 .about__img {
   @include mq(mobile-only) {
     width: 280px;
     height: 279px;
+    margin-bottom: 46px;
   }
   @include mq(tablet-only) {
     width: 340px;
     height: 339px;
+    margin-right: 17px;
   }
   @include mq(desktop) {
     width: 516px;
     height: 516px;
+    margin-right: 74px;
   }
 }
-.text1 {
-  font-weight: 500;
-  @include font-size(12, 19.44);
+.about__text-container {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  margin: 0 auto;
 
-  margin-bottom: 50px;
+  @include mq(mobile-only) {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 280px;
+  }
+  @include mq(tablet-only) {
+    width: 340px;
+  }
+  @include mq(desktop) {
+    width: 463px;
+  }
+}
+
+.text1 {
+  color: var(--text-main-color);
+  font-weight: 500;
+  text-align: left;
+
+  @include mq(mobile-only) {
+    @include font-size(12, 19.44);
+    margin-bottom: 26px;
+  }
+  @include mq(tablet-only) {
+    @include font-size(14, 26.64);
+    margin-bottom: 26px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 35px;
+  }
 }
 .text2 {
-  font-weight: 500;
-  @include font-size(12, 19.44);
   color: var(--text-second-color);
-  text-align: left;
-  margin-bottom: 47px;
-}
-.moreless-button {
   font-weight: 500;
-  @include font-size(16, 20.83);
-  color: var(--accent-color);
+  text-align: left;
+
+  @include mq(mobile-only) {
+    @include font-size(12, 19.44);
+    margin-bottom: 17px;
+  }
+
+  @include mq(tablet-only) {
+    @include font-size(14, 24.64, 0.04);
+    // margin-bottom: 62px;
+  }
+
+  @include mq(desktop) {
+    @include font-size(14, 27.16, 0.04);
+    margin-bottom: 45px;
+  }
 }
-.moreless-button__icon {
-  fill: currentColor;
-  margin-left: 13.62px;
+.text3 {
+  color: var(--text-second-color);
+  font-weight: 500;
+  text-align: left;
+
+  @include mq(mobile-only) {
+    @include font-size(12, 19.44);
+    margin-bottom: 17px;
+  }
+
+  @include mq(tablet-only) {
+    @include font-size(14, 24.64, 0.04);
+    margin-bottom: 62px;
+  }
+
+  @include mq(desktop) {
+    @include font-size(14, 27.16, 0.04);
+    margin-bottom: 45px;
+  }
 }
-.qwerty {
-  // margin: 0 auto;
+
+.about__button {
   width: 176px;
   height: 44px;
   border-radius: 22px;
-  background-color: var(--bgc-main);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include font-size(16, 20.83);
+  font-weight: 700;
 }
+.about__button-icon {
+  fill: currentColor;
+  margin-left: 13.62px;
+}
+
+// .moreless-button {
+//   font-weight: 500;
+//   @include font-size(16, 20.83);
+//   color: var(--accent-color);
+// }
+// .moreless-button__icon {
+//   fill: currentColor;
+//   margin-left: 13.62px;
+// }
+// .qwerty {
+//   // margin: 0 auto;
+//   width: 176px;
+//   height: 44px;
+//   border-radius: 22px;
+//   background-color: var(--bgc-main);
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
