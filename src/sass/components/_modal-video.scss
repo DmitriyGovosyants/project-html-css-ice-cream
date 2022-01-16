@@ -1,25 +1,35 @@
 .modal-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
 
-  width: 90%;
-  max-width: 640px;
-
-  padding-top: 20px;
-  padding-bottom: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  transform: translate(-50%, -50%) scale(1);
+  padding: 20px;
 
   .backdrop--hidden & {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: scale(1.1);
   }
 
-  @media screen and (max-width: 1199px) and (max-height: 620px) and (orientation: landscape) {
+  @include mq(mobile-only) {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include mq(tablet) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+    max-width: 650px;
+
+    transform: translate(-50%, -50%) scale(1);
+
+    .backdrop--hidden & {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+  @media screen and (max-height: 900px) and (orientation: landscape) {
     position: static;
 
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
 
@@ -29,11 +39,31 @@
       transform: scale(1.1);
     }
   }
+  @include mq(desktop) {
+    max-width: 750px;
+  }
 }
 
 .modal-video__content {
   display: flex;
   flex-direction: column;
+}
+
+.modal-video__list {
+  margin-bottom: 40px;
+  text-align: start;
+
+  @include mq(tablet) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.modal-video__item {
+  line-height: 25px;
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
 }
 
 .modal-video__player {
