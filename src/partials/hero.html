@@ -15,13 +15,32 @@
                 </li>
             </ul>
             <div class="hero__description">
-                <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et</p>
-                <button class="button-arrow button-arrow--small" type="button">
+                <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut
+                    labore et
+                    <span id="dots"></span>
+                </p>
+                <p class="hero__text" style="display:none;" id="more">One female unicorn was especially friendly, and the researchers were able to
+                    communicate with the animals.</p>
+                <button onclick="showhide()" id="toggle" class="button-arrow button-arrow--small" type="button">
                     <svg class="button-arrow__icon">
                         <use href="./images/icons.svg#big-arrow-icon"></use>
                     </svg>
                 </button>
+                <script>
+                    function showhide() {
+                            const moreText = document.getElementById("more");
+                            const btnText = document.getElementById("toggle");
+
+                            if (dots.style.display === "none") {
+                                dots.style.display = "block";
+                                moreText.style.display = "none";
+                            } else {
+                                dots.style.display = "none";
+                                moreText.style.display = "block";
+                            }
+                        }
+                </script>
             </div>
         </div>
         <div class="hero__right">
