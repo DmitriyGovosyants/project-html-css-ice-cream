@@ -11,6 +11,15 @@
   background-color: var(--bgc-main);
   color: var(--accent-color);
 
+  transition: color var(--transition-time) var(--transition-function),
+    background-color var(--transition-time) var(--transition-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--bgc-main);
+  }
+
   &--small {
     width: 18px;
     height: 18px;
