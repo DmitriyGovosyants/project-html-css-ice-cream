@@ -213,10 +213,6 @@
 }
 
 .mobile-menu__item {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  // padding-left: 21px;
-
   background-color: inherit;
   transition: background-color var(--transition-time) var(--transition-function);
   border-top: 1px solid #e18298;
@@ -235,7 +231,8 @@
 }
 
 .mobile-menu__link {
-  padding-right: 125px;
+  display: block;
+  height: auto;
   padding-left: 21px;
 
   @include font-size(14, 18);
