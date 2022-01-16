@@ -15,6 +15,8 @@ body.modal-open {
 }
 
 .modal__title {
+  margin-bottom: 20px;
+
   @include font-size(28, 32, 0.05);
 
   @include mq(tablet) {
@@ -23,6 +25,10 @@ body.modal-open {
   @include mq(desktop) {
     @include font-size(40, 46, 0.05);
   }
+}
+
+.modal__button {
+  @include font-size(20, 24, 0.05);
 }
 
 .modal__button-close {
