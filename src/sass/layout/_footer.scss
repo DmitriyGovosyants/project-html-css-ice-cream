@@ -38,9 +38,28 @@
   }
 }
 
-.footer__pre-title,
+.footer__pre-title {
+  margin-bottom: 17px;
+
+  text-align: left;
+
+  @include mq(tablet) {
+    margin-bottom: 16px;
+
+    letter-spacing: 0.04em;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 15px;
+  }
+}
+
 .footer__title {
   text-align: left;
+
+  @include mq(tablet) {
+    letter-spacing: 0.06em;
+  }
 }
 
 .footer__right {
@@ -55,10 +74,6 @@
   font-weight: 700;
   @include font-size(12, 22);
   color: var(--text-main-color);
-
-  @include mq(tablet) {
-    @include font-size(14, 26, 0.01);
-  }
 
   @include mq(desktop) {
     @include font-size(16, 30, 0.02);
@@ -103,6 +118,10 @@
   display: flex;
   justify-content: end;
   margin-bottom: 46px;
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .socials__item {
