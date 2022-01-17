@@ -1,7 +1,7 @@
 .gallery {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, var(--bgc-main) 60%, var(--bgc-second) 40%);
+    background: linear-gradient(to top, var(--bgc-main) 50%, var(--bgc-second) 50%);
 }
 
 .gallery-container {
@@ -12,6 +12,10 @@
         padding-top: 70px;
         padding-bottom: 60px;
     }
+}
+
+.gallery__title {
+    @include visuallity-hidden();
 }
 
 .gallery__list {

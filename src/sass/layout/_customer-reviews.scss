@@ -79,6 +79,7 @@
 
     font-weight: 500;
     @include font-size(12, 30.6);
+    // border-bottom: 1px solid var(--figure-line-color);
 
     color: var(--text-main-color);
 
@@ -102,6 +103,18 @@
 
     // repeating-linear-gradients
     // z-index: 2;
+}
+
+.customer-reviews__text-wrap {
+    // background: repeating-linear-gradient(0deg, #e1e1e1 20%, #ffffff 39%);
+    background-image: linear-gradient(
+        to right,
+        var(--figure-line-color) 0%,
+        var(--figure-line-color) 100%
+    );
+    background-repeat: repeat-x;
+    background-position: 0% 100%;
+    background-size: 100% 1px;
 }
 
 .customer-reviews__label {
