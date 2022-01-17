@@ -104,6 +104,7 @@
 }
 
 .hero__btn {
+  display: block;
   min-width: 62px;
 
   @include font-size(8, 10.42);

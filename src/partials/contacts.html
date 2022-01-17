@@ -3,15 +3,11 @@
 <section class="contacts" id="contacts">
     <div class="container contacts__back">
         <h2 class="contacts__main-title">We are waiting for you</h2>
-
-        <!-----------------Контакты и режим работы---------------->
-
         <ul class="contacts-list">
             <li class="contacts__item">
                 <p class="contacts__category">CAFE</p>
                 <h3 class="contacts__title">Chicago</h3>
                 <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-
                 <ul class="contacts-date">
                     <li class="contacts-date__list-top">
                         <p class="contacts-date__days">Monday - Friday</p>
@@ -19,7 +15,6 @@
                             <time datetime="06:00">06:00 AM</time> - <time datetime="10:00">10:00 AM</time>
                         </p>
                     </li>
-
                     <li class="contacts-date__list">
                         <p class="contacts-date__days">Saturday - Sunday</p>
                         <p class="contacts-date__time">
@@ -27,7 +22,6 @@
                         </p>
                     </li>
                 </ul>
-
                 <ul class="contacts-link">
                     <li>
                         <a class="contacts-link__connect" href="tel:+610383766284">+61(0) 383 766 284</a>
@@ -37,29 +31,24 @@
                     </li>
                 </ul>
             </li>
-
             <li class="contacts__item">
                 <p class="contacts__category contacts__category--green">FOOD TRUCK</p>
                 <h3 class="contacts__title">Los Angeles</h3>
                 <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                <div>
-                    <ul class="contacts-date">
-                        <li class="contacts-date__list-top">
-                            <h3 class="contacts-date__days">Monday - Friday</h3>
-                            <p class="contacts-date__time">
-                                <time datetime="06:00">06:00 AM</time> - <time datetime="10:00">10:00 AM</time>
-                            </p>
-                        </li>
-
-                        <li class="contacts-date__list">
-                            <p class="contacts-date__days">Saturday - Sunday</p>
-                            <p class="contacts-date__time">
-                                <time datetime="08:00">08:00 AM</time> - <time datetime="16:00">16:00 AM</time>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-
+                <ul class="contacts-date">
+                    <li class="contacts-date__list-top">
+                        <h3 class="contacts-date__days">Monday - Friday</h3>
+                        <p class="contacts-date__time">
+                            <time datetime="06:00">06:00 AM</time> - <time datetime="10:00">10:00 AM</time>
+                        </p>
+                    </li>
+                    <li class="contacts-date__list">
+                        <p class="contacts-date__days">Saturday - Sunday</p>
+                        <p class="contacts-date__time">
+                            <time datetime="08:00">08:00 AM</time> - <time datetime="16:00">16:00 AM</time>
+                        </p>
+                    </li>
+                </ul>
                 <ul class="contacts-link">
                     <li>
                         <a class="contacts-link__connect" href="tel:+610383766284">+61(0) 383 766 284</a>
@@ -69,29 +58,24 @@
                     </li>
                 </ul>
             </li>
-
             <li class="contacts__item">
                 <p class="contacts__category">CAFE</p>
                 <h3 class="contacts__title">New York</h3>
                 <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-                <div>
-                    <ul class="contacts-date">
-                        <li class="contacts-date__list-top">
-                            <p class="contacts-date__days">Monday - Friday</p>
-                            <p class="contacts-date__time">
-                                <time datetime="06:00">06:00 AM</time> - <time datetime="10:00">10:00 AM</time>
-                            </p>
-                        </li>
-
-                        <li class="contacts-date__list">
-                            <h3 class="contacts-date__days">Saturday - Sunday</h3>
-                            <p class="contacts-date__time">
-                                <time datetime="08:00">08:00 AM</time> - <time datetime="16:00">16:00 AM</time>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-
+                <ul class="contacts-date">
+                    <li class="contacts-date__list-top">
+                        <p class="contacts-date__days">Monday - Friday</p>
+                        <p class="contacts-date__time">
+                            <time datetime="06:00">06:00 AM</time> - <time datetime="10:00">10:00 AM</time>
+                        </p>
+                    </li>
+                    <li class="contacts-date__list">
+                        <h3 class="contacts-date__days">Saturday - Sunday</h3>
+                        <p class="contacts-date__time">
+                            <time datetime="08:00">08:00 AM</time> - <time datetime="16:00">16:00 AM</time>
+                        </p>
+                    </li>
+                </ul>
                 <ul class="contacts-link">
                     <li>
                         <a class="contacts-link__connect" href="tel:+610383766284">+61(0) 383 766 284</a>
@@ -102,12 +86,9 @@
                 </ul>
             </li>
         </ul>
-
-        <!-------------------------Кнопки открытия модального окна с картой-------------------->
-
-        <ul class="contacts-btn" data-modal-open-location data-modal-open-franchise>
+        <ul class="contacts-btn">
             <li class="contacts-btn__item">
-                <button class="button button--dark contacts-btn__link contacts-btn__link-red" type="button">
+                <button class="button button--dark contacts-btn__link contacts-btn__link-red" type="button" data-modal-open-location>
                     Our Locations
                     <svg class="contacts-btn__icon-white">
                         <use href="images/icons.svg#vector-icon"></use>
@@ -115,7 +96,7 @@
                 </button>
             </li>
             <li class="contacts-btn__item">
-                <button class="button contacts-btn__link contacts-btn__link-white" type="button">
+                <button class="button contacts-btn__link contacts-btn__link-white" type="button" data-modal-open-franchise>
                     Franchise
                     <svg class="contacts-btn__icon-red">
                         <use href="images/icons.svg#vector-icon"></use>

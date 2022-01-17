@@ -245,14 +245,6 @@
 
 .contacts-link {
   margin-top: 25px;
-
-  @include mq(tablet) {
-    margin-bottom: 30px;
-  }
-
-  @include mq(desktop) {
-    margin-bottom: 32px;
-  }
 }
 
 .contacts-link__connect {
