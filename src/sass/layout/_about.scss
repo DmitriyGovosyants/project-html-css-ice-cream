@@ -45,16 +45,14 @@
 .about__content {
   display: flex;
   @include mq(mobile-only) {
-    // justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   @include mq(tablet) {
     align-items: flex-start;
-    // justify-content: center;
   }
 }
-.about__img {
+.about__picture {
   @include mq(mobile-only) {
     width: 280px;
     height: 279px;
@@ -72,9 +70,6 @@
   }
 }
 .about__text-container {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
   margin: 0 auto;
   padding-top: 50px;
 
@@ -91,13 +86,17 @@
   }
 }
 
-.text1 {
-  color: var(--text-main-color);
+.about__text {
   font-weight: 500;
-  text-align: left;
-
   @include mq(mobile-only) {
     @include font-size(12, 19.44);
+  }
+}
+
+.about__text--main {
+  color: var(--text-main-color);
+
+  @include mq(mobile-only) {
     margin-bottom: 26px;
   }
   @include mq(tablet-only) {
@@ -109,13 +108,10 @@
     margin-bottom: 35px;
   }
 }
-.text2 {
+.about__text--sub {
   color: var(--text-second-color);
-  font-weight: 500;
-  text-align: left;
 
   @include mq(mobile-only) {
-    @include font-size(12, 19.44);
     margin-bottom: 10px;
   }
 
@@ -129,13 +125,10 @@
     margin-bottom: 27px;
   }
 }
-.text3 {
+.about__text--sub2 {
   color: var(--text-second-color);
-  font-weight: 500;
-  text-align: left;
 
   @include mq(mobile-only) {
-    @include font-size(12, 19.44);
     margin-bottom: 17px;
   }
 
@@ -152,7 +145,8 @@
 .about__button {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 37px;
 
   width: 176px;
   height: 44px;
@@ -162,27 +156,8 @@
   font-weight: 700;
 }
 .about__button-icon {
+  display: block;
   stroke: currentColor;
-  margin-left: 13.62px;
+  width: 9px;
+  height: 11px;
 }
-
-// .moreless-button {
-//   font-weight: 500;
-//   @include font-size(16, 20.83);
-//   color: var(--accent-color);
-// }
-// .moreless-button__icon {
-//   fill: currentColor;
-//   margin-left: 13.62px;
-// }
-// .qwerty {
-//   // margin: 0 auto;
-//   width: 176px;
-//   height: 44px;
-//   border-radius: 22px;
-//   background-color: var(--bgc-main);
-
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
