@@ -16,6 +16,16 @@
 
   transition: background-color var(--transition-time) var(--transition-function);
   cursor: pointer;
+
+  @include mq(tablet) {
+    right: 40px;
+    bottom: 20px;
+  }
+
+  @include mq(desktop) {
+    right: 60px;
+    bottom: 40px;
+  }
 }
 
 .scrollup:hover {
