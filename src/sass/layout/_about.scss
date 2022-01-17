@@ -1,0 +1,162 @@
+.about {
+  padding-top: 125px;
+  padding-bottom: 20px;
+  background-color: var(--bgc-second);
+}
+
+.about__title {
+  @include mq(mobile-only) {
+    margin-bottom: 26px;
+  }
+  @include mq(tablet-only) {
+    margin-bottom: 50px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 26px;
+  }
+}
+
+.about__content {
+  display: flex;
+  @include mq(mobile-only) {
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  @include mq(tablet) {
+    align-items: flex-start;
+    // justify-content: center;
+  }
+}
+.about__img {
+  @include mq(mobile-only) {
+    width: 280px;
+    height: 279px;
+    margin-bottom: 46px;
+  }
+  @include mq(tablet-only) {
+    width: 340px;
+    height: 339px;
+    margin-right: 17px;
+  }
+  @include mq(desktop) {
+    width: 516px;
+    height: 516px;
+    margin-right: 74px;
+  }
+}
+.about__text-container {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  @include mq(mobile-only) {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 280px;
+  }
+  @include mq(tablet-only) {
+    width: 340px;
+  }
+  @include mq(desktop) {
+    width: 463px;
+  }
+}
+
+.text1 {
+  color: var(--text-main-color);
+  font-weight: 500;
+  text-align: left;
+
+  @include mq(mobile-only) {
+    @include font-size(12, 19.44);
+    margin-bottom: 26px;
+  }
+  @include mq(tablet-only) {
+    @include font-size(14, 26.64);
+    margin-bottom: 26px;
+  }
+  @include mq(desktop) {
+    @include font-size(16, 28.16, 0.04);
+    margin-bottom: 35px;
+  }
+}
+.text2 {
+  color: var(--text-second-color);
+  font-weight: 500;
+  text-align: left;
+
+  @include mq(mobile-only) {
+    @include font-size(12, 19.44);
+    margin-bottom: 10px;
+  }
+
+  @include mq(tablet-only) {
+    @include font-size(14, 24.64, 0.04);
+    margin-bottom: 10px;
+  }
+
+  @include mq(desktop) {
+    @include font-size(14, 27.16, 0.04);
+    margin-bottom: 27px;
+  }
+}
+.text3 {
+  color: var(--text-second-color);
+  font-weight: 500;
+  text-align: left;
+
+  @include mq(mobile-only) {
+    @include font-size(12, 19.44);
+    margin-bottom: 17px;
+  }
+
+  @include mq(tablet-only) {
+    @include font-size(14, 24.64, 0.04);
+    margin-bottom: 65px;
+  }
+
+  @include mq(desktop) {
+    @include font-size(14, 27.16, 0.04);
+    margin-bottom: 38px;
+  }
+}
+.about__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 176px;
+  height: 44px;
+  border-radius: 22px;
+
+  @include font-size(16, 20.83);
+  font-weight: 700;
+}
+.about__button-icon {
+  stroke: currentColor;
+  margin-left: 13.62px;
+}
+
+// .moreless-button {
+//   font-weight: 500;
+//   @include font-size(16, 20.83);
+//   color: var(--accent-color);
+// }
+// .moreless-button__icon {
+//   fill: currentColor;
+//   margin-left: 13.62px;
+// }
+// .qwerty {
+//   // margin: 0 auto;
+//   width: 176px;
+//   height: 44px;
+//   border-radius: 22px;
+//   background-color: var(--bgc-main);
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
