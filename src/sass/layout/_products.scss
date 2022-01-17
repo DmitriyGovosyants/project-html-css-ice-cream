@@ -63,11 +63,37 @@
       margin-right: 27px;
     }
   }
+}
+
+.products__item--first {
+  background-color: var(--bgc-third);
+}
+
+.products__item--second {
+  background-color: var(--bgc-fourth);
+}
+
+.products__item--third {
+  background-color: var(--bgc-fifth);
+}
+
+.products__title {
+  position: relative;
+  font-family: Titan One, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-fourth-color);
+  @include font-size(20, 23, 0.04);
+
+  @include mq(desktop) {
+    @include font-size(30, 34, 0.04);
+  }
 
   &::before {
     content: ' ';
     position: absolute;
-    top: -23%;
+    top: -275px;
     left: 50%;
     transform: translateX(-50%);
     background-repeat: no-repeat;
@@ -79,18 +105,36 @@
     @include mq(tablet) {
       width: 220px;
       height: 226px;
+      top: -260px;
     }
 
     @include mq(desktop) {
       width: 335px;
       height: 335px;
-      top: -40%;
+      top: -370px;
+    }
+  }
+
+  &::after {
+    content: ' ';
+    display: flex;
+    margin: 30px auto;
+    background-image: url('../images/product/points1x.png');
+    @include mq(retina) {
+      background-image: url('../images/product/points2x.png');
+    }
+    width: 26px;
+    height: 6px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    @include mq(desktop) {
+      margin: 32px auto;
     }
   }
 }
 
-.products__item--first {
-  background-color: var(--bgc-third);
+.products__title--first {
   &::before {
     @include mq(desktop) {
       background-image: url('../images/product/ice-cream-x1.png');
@@ -113,8 +157,7 @@
   }
 }
 
-.products__item--second {
-  background-color: var(--bgc-fourth);
+.products__title--second {
   &::before {
     @include mq(desktop) {
       background-image: url('../images/product/ice-coffee-x1.png');
@@ -137,8 +180,7 @@
   }
 }
 
-.products__item--third {
-  background-color: var(--bgc-fifth);
+.products__title--third {
   &::before {
     @include mq(desktop) {
       background-image: url('../images/product/milk-shake-x1.png');
@@ -157,36 +199,6 @@
       @include mq(retina) {
         background-image: url('../images/product/milk-shake-mob-x2.png');
       }
-    }
-  }
-}
-
-.products__title {
-  font-family: Titan One;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--text-fourth-color);
-  @include font-size(20, 23, 0.04);
-
-  @include mq(desktop) {
-    @include font-size(30, 34, 0.04);
-  }
-
-  &::after {
-    content: ' ';
-    display: flex;
-    margin: 30px auto;
-    background-image: url('../images/product/points1x.png');
-    @include mq(retina) {
-      background-image: url('../images/product/points2x.png');
-    }
-    width: 26px;
-    height: 6px;
-    background-size: contain;
-    background-color: transparent;
-    @include mq(desktop) {
-      margin: 32px auto;
     }
   }
 }
