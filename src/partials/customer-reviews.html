@@ -1,69 +1,93 @@
-<section>
+<section class="customer-reviews">
     <div class="container">
-        <div class="">
-            <ul class="">
-                <li class="">
-                    <img
-                        srcset="
-                            ./images/custom-reviews/image-1-x1.png 1x,
-                            ./images/custom-reviews/image-1-x2.png 2x
-                        "
-                        src="./images/custom-reviews/image-1-x1.png"
-                        alt="reviwer-1"
-                    />
-                    <p class="review">
-                        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
-                        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in
-                        nibh vel risus.
-                    </p>
-                    <p class="reviwer-data">Emily, Los Angeles</p>
-                </li>
-                <li class="">
-                    <img
-                        srcset="
-                            ./images/custom-reviews/image-2-x1.png 1x,
-                            ./images/custom-reviews/image-2-x2.png 2x
-                        "
-                        src="./images/custom-reviews/image-2-x1.png"
-                        alt="reviwer-2"
-                    />
-                    <p class="review">
-                        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
-                        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in
-                        nibh vel risus.
-                    </p>
-                    <p class="reviwer-data">Emily, Los Angeles</p>
-                </li>
-                <li class="">
-                    <img
-                        srcset="
-                            ./images/custom-reviews/image-3-x1.png 1x,
-                            ./images/custom-reviews/image-3-x2.png 2x
-                        "
-                        src="./images/custom-reviews/image-3-x1.png"
-                        alt="reviwer-3"
-                    />
-                    <p class="review">
-                        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
-                        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in
-                        nibh vel risus.
-                    </p>
-                    <p class="reviwer-data">Emily, Los Angeles</p>
-                </li>
-            </ul>
-            <div class="rubber-indicator">
-                <ol class="page-dots">
-                    <li class="dot">
-                        <a class="" href="#"></a>
-                    </li>
-                    <li class="dota">
-                        <a class="" href="#"></a>
-                    </li>
-                    <li class="dot">
-                        <a class="" href="#"></a>
-                    </li>
-                </ol>
+        <h2 class="customer-reviews__title">Отзывы покупателей</h2>
+        <div class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__items">
+                    <div class="slider__item">
+                        <div class="customer-reviews__inner">
+                            <picture class="customer-reviews__img">
+                                <source
+                                    srcset="
+                                        ./images/customer-reviews/image-1-x1.png 1x,
+                                        ./images/customer-reviews/image-1-x2.png 2x
+                                    "
+                                    type="image/png"
+                                />
+                                <img src="./images/customer-reviews/image-1-x1.png" alt="" />
+                            </picture>
+                            <div class="customer-reviews__text-inner">
+                                <p class="customer-reviews__text">
+                                    Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+                                    Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
+                                    Lorem ipsum primis in nibh vel risus.
+                                </p>
+                            </div>
+                            <div class="customer-reviews__decorate"></div>
+                            <p class="customer-reviews__label">Emily, Los Angeles</p>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="customer-reviews__inner">
+                            <picture class="customer-reviews__img">
+                                <source
+                                    srcset="
+                                        ./images/customer-reviews/image-2-x1.png 1x,
+                                        ./images/customer-reviews/image-2-x2.png 2x
+                                    "
+                                    type="image/png"
+                                />
+                                <img src="./images/customer-reviews/image-2-x1.png" alt="" />
+                            </picture>
+                            <div class="customer-reviews__text-inner">
+                                <p class="customer-reviews__text">
+                                    Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+                                    Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
+                                    Lorem ipsum primis in nibh vel risus.
+                                </p>
+                            </div>
+                            <div class="customer-reviews__decorate"></div>
+                            <p class="customer-reviews__label">Lisa, New-York</p>
+                        </div>
+                    </div>
+                    <div class="slider__item">
+                        <div class="customer-reviews__inner">
+                            <picture class="customer-reviews__img">
+                                <source
+                                    srcset="
+                                        ./images/customer-reviews/image-3-x1.png 1x,
+                                        ./images/customer-reviews/image-3-x2.png 2x
+                                    "
+                                    type="image/png"
+                                />
+                                <img src="./images/customer-reviews/image-3-x1.png" alt="" />
+                            </picture>
+                            <div class="customer-reviews__text-inner">
+                                <p class="customer-reviews__text">
+                                    Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+                                    Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
+                                    Lorem ipsum primis in nibh vel risus.
+                                </p>
+                            </div>
+                            <div class="customer-reviews__decorate"></div>
+                            <p class="customer-reviews__label">Annet, Paris</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <a
+                class="slider__control slider__control_prev"
+                href="#"
+                role="button"
+                data-slide="prev"
+            ></a>
+            <a
+                class="slider__control slider__control_next"
+                href="#"
+                role="button"
+                data-slide="next"
+            ></a>
         </div>
     </div>
 </section>
+<script src="./js/pagination.js"></script>
