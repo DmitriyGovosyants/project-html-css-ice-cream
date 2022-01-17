@@ -50,6 +50,7 @@
   // flex-direction: column;
   // justify-content: center;
   margin: 0 auto;
+  padding-top: 50px;
 
   @include mq(mobile-only) {
     padding-left: 30px;
@@ -78,6 +79,7 @@
     margin-bottom: 26px;
   }
   @include mq(desktop) {
+    @include font-size(16, 28.16, 0.04);
     margin-bottom: 35px;
   }
 }
@@ -88,17 +90,17 @@
 
   @include mq(mobile-only) {
     @include font-size(12, 19.44);
-    margin-bottom: 17px;
+    margin-bottom: 10px;
   }
 
   @include mq(tablet-only) {
     @include font-size(14, 24.64, 0.04);
-    // margin-bottom: 62px;
+    margin-bottom: 10px;
   }
 
   @include mq(desktop) {
     @include font-size(14, 27.16, 0.04);
-    margin-bottom: 45px;
+    margin-bottom: 27px;
   }
 }
 .text3 {
@@ -113,16 +115,19 @@
 
   @include mq(tablet-only) {
     @include font-size(14, 24.64, 0.04);
-    margin-bottom: 62px;
+    margin-bottom: 65px;
   }
 
   @include mq(desktop) {
     @include font-size(14, 27.16, 0.04);
-    margin-bottom: 45px;
+    margin-bottom: 38px;
   }
 }
-
 .about__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 176px;
   height: 44px;
   border-radius: 22px;
@@ -131,7 +136,7 @@
   font-weight: 700;
 }
 .about__button-icon {
-  fill: currentColor;
+  stroke: currentColor;
   margin-left: 13.62px;
 }
 
