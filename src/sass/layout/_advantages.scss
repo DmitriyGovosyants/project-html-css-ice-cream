@@ -20,7 +20,7 @@
   @include visuallity-hidden();
 }
 
-.advantages__box {
+.advantages__list {
   @include mq(tablet) {
     display: flex;
   }
@@ -34,8 +34,16 @@
     }
   }
 
+  @include mq(mobile) {
+    width: 100%;
+    padding: 0 100px;
+    text-align: center;
+  }
+
   @include mq(tablet) {
     flex-basis: calc((100% - 120px) / 3);
+    text-align: start;
+    padding: 0;
     &:not(:first-child) {
       margin-left: 60px;
     }
@@ -80,73 +88,53 @@
   }
 }
 
-.advantages__discription-first:before {
+.advantages__discription::before {
   content: '';
   display: block;
+
   width: 50px;
   height: 50px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 
-  background-image: url('../images/advantages/cow-x1.png');
   background-repeat: no-repeat;
-
   background-size: contain;
+
+  @include mq(mobile) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mq(tablet) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 36px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__discription-first::before {
+  background-image: url('../images/advantages/cow-x1.png');
 
   @include mq(retina) {
     background-image: url('../images/advantages/cow-x2.png');
   }
-
-  @include mq(tablet) {
-    margin-bottom: 36px;
-  }
-  @include mq(desktop) {
-    margin-bottom: 40px;
-  }
 }
 
-.advantages__discription-second:before {
-  content: '';
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin-bottom: 20px;
-
+.advantages__discription-second::before {
   background-image: url('../images/advantages/apple-x1.png');
-  background-repeat: no-repeat;
-  background-size: contain;
 
   @include mq(retina) {
     background-image: url('../images/advantages/apple-x2.png');
   }
-
-  @include mq(tablet) {
-    margin-bottom: 36px;
-  }
-
-  @include mq(desktop) {
-    margin-bottom: 40px;
-  }
 }
 
-.advantages__discription-third:before {
-  content: '';
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin-bottom: 20px;
-
+.advantages__discription-third::before {
   background-image: url('../images/advantages/heart-x1.png');
-  background-repeat: no-repeat;
-  background-size: contain;
 
   @include mq(retina) {
     background-image: url('../images/advantages/heart-x2.png');
-  }
-
-  @include mq(tablet) {
-    margin-bottom: 36px;
-  }
-  @include mq(desktop) {
-    margin-bottom: 40px;
   }
 }
