@@ -51,7 +51,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // width: 100%;
 
   @include mq(tablet) {
     display: flex;
@@ -60,8 +59,6 @@
 }
 
 .contacts__item {
-  // width: 100%;
-  // height: 100%;
   padding: 43px 20px 43px 20px;
 
   background: var(--bgc-main);
@@ -303,8 +300,7 @@
   min-width: 161px;
   height: 44px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
+  @include font-size(16, 21);
 }
 
 .contacts-btn__link-red {
@@ -346,7 +342,6 @@
 .contacts-btn__icon-red {
   width: 10px;
   height: 10px;
-  margin-left: 15px;
   margin-left: 13px;
 
   stroke: currentColor;
