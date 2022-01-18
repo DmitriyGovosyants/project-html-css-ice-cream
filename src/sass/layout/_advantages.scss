@@ -2,9 +2,12 @@
   padding-top: 20px;
   padding-bottom: 50px;
 
-  background-color: var(--bgc-second);
   width: 100%;
   margin: 0 auto;
+
+  @include mq(notDesktop) {
+    background-color: var(--bgc-second);
+  }
 
   @include mq(tablet) {
     padding-top: 33px;
