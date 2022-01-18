@@ -90,6 +90,12 @@
   background-image: url('../images/advantages/cow-x1.png');
   background-repeat: no-repeat;
 
+  background-size: contain;
+
+  @include mq(retina) {
+    background-image: url('../images/advantages/cow-x2.png');
+  }
+
   @include mq(tablet) {
     margin-bottom: 36px;
   }
@@ -107,6 +113,11 @@
 
   background-image: url('../images/advantages/apple-x1.png');
   background-repeat: no-repeat;
+  background-size: contain;
+
+  @include mq(retina) {
+    background-image: url('../images/advantages/apple-x2.png');
+  }
 
   @include mq(tablet) {
     margin-bottom: 36px;
@@ -126,6 +137,11 @@
 
   background-image: url('../images/advantages/heart-x1.png');
   background-repeat: no-repeat;
+  background-size: contain;
+
+  @include mq(retina) {
+    background-image: url('../images/advantages/heart-x2.png');
+  }
 
   @include mq(tablet) {
     margin-bottom: 36px;

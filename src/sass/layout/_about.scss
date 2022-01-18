@@ -93,7 +93,7 @@
   }
 }
 
-.about__text--main {
+.about__text-main {
   color: var(--text-main-color);
 
   @include mq(mobile-only) {
@@ -108,7 +108,7 @@
     margin-bottom: 35px;
   }
 }
-.about__text--sub {
+.about__text-first {
   color: var(--text-second-color);
 
   @include mq(mobile-only) {
@@ -125,7 +125,7 @@
     margin-bottom: 27px;
   }
 }
-.about__text--sub2 {
+.about__text-second {
   color: var(--text-second-color);
 
   @include mq(mobile-only) {
