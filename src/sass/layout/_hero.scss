@@ -236,11 +236,12 @@
 
   position: absolute;
   left: 36px;
-  bottom: 0;
+  bottom: -6px;
   z-index: 1;
 
   @include mq(desktop) {
     left: 77px;
+    bottom: -11px;
   }
 }
 
