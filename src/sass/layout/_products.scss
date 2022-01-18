@@ -16,40 +16,40 @@
 .products__list {
   display: flex;
   justify-content: center;
+  margin-top: 147px;
 
   @include mq(mobile-only) {
-    margin-top: 147px;
     flex-wrap: wrap;
   }
 
   @include mq(tablet) {
     margin-top: 150px;
-    flex-basis: calc(100% / 3 - 40px);
   }
 
   @include mq(desktop) {
     margin-top: 259px;
-    flex-basis: calc(100% / 3 - 54px);
   }
 }
 
 .products__item {
-  max-width: 280px;
-  height: auto;
   position: relative;
-  border-radius: 24px;
+  height: auto;
+  padding: 158px 40px 44px;
+
   text-align: center;
 
+  border-radius: 24px;
+
   @include mq(mobile-only) {
-    padding: 158px 40px 44px;
+    max-width: 280px;
     &:not(:last-child) {
       margin-bottom: 127px;
     }
   }
 
-  @include mq(tablet-only) {
+  @include mq(tablet) {
     padding: 152px 11px 40px;
-    width: 220px;
+    flex-basis: calc((100% - 40px) / 3);
     &:not(:last-child) {
       margin-right: 20px;
     }
@@ -57,7 +57,7 @@
 
   @include mq(desktop) {
     padding: 163px 44px 50px;
-    min-width: 330px;
+    flex-basis: calc((100% - 54px) / 3);
     &:not(:last-child) {
       margin-right: 27px;
     }
@@ -78,8 +78,9 @@
 
 .products__title {
   position: relative;
+
   font-family: Titan One, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   color: var(--text-fourth-color);
@@ -95,22 +96,24 @@
     top: -275px;
     left: 50%;
     transform: translateX(-50%);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+
     width: 249px;
     height: 252px;
 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
     @include mq(tablet) {
+      top: -260px;
       width: 220px;
       height: 226px;
-      top: -260px;
     }
 
     @include mq(desktop) {
+      top: -370px;
       width: 335px;
       height: 335px;
-      top: -370px;
     }
   }
 
@@ -118,15 +121,19 @@
     content: ' ';
     display: flex;
     margin: 30px auto;
+
     background-image: url('../images/product/points1x.png');
     @include mq(retina) {
       background-image: url('../images/product/points2x.png');
     }
+
     width: 26px;
     height: 6px;
+
     background-repeat: no-repeat;
     background-size: contain;
     background-color: transparent;
+
     @include mq(desktop) {
       margin: 32px auto;
     }
@@ -141,12 +148,14 @@
         background-image: url('../images/product/ice-cream-x2.png');
       }
     }
+
     @include mq(tablet-only) {
       background-image: url('../images/product/ice-cream-tab-x1.png');
       @include mq(retina) {
         background-image: url('../images/product/ice-cream-tab-x2.png');
       }
     }
+
     @include mq(mobile-only) {
       background-image: url('../images/product/ice-cream-mob-x1.png');
       @include mq(retina) {
@@ -164,12 +173,14 @@
         background-image: url('../images/product/ice-coffee-x2.png');
       }
     }
+
     @include mq(tablet-only) {
       background-image: url('../images/product/ice-coffee-tab-x1.png');
       @include mq(retina) {
         background-image: url('../images/product/ice-coffee-tab-x2.png');
       }
     }
+
     @include mq(mobile-only) {
       background-image: url('../images/product/ice-coffee-mob-x1.png');
       @include mq(retina) {
@@ -214,7 +225,7 @@
     @include font-size(14, 25, 0.04);
   }
 
-  @include mq(desctop) {
+  @include mq(desktop) {
     margin-bottom: 62px;
     @include font-size(16, 28, 0.04);
   }
@@ -222,13 +233,15 @@
 
 .products__btn {
   margin: 0 auto;
+
+  transition: background-color var(--transition-time) var(--transition-function),
+    color var(--transition-time) var(--transition-function);
+
   &:hover,
   &:focus {
     background-color: var(--button-second-hover-color);
     color: var(--text-fourth-color);
   }
-  transition: background-color var(--transition-time) var(--transition-function),
-    color var(--transition-time) var(--transition-function);
 }
 
 .more {
