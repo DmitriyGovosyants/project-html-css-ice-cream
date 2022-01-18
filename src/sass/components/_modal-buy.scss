@@ -45,12 +45,6 @@
   }
 }
 
-.buy-form {
-  @include mq(tablet) {
-    // padding: 0 50px;
-  }
-}
-
 .modal__description {
   font-weight: 700;
   margin-bottom: 20px;
@@ -105,9 +99,6 @@
       margin-bottom: 10px;
     }
     width: 100%;
-    .buy-form__phone & {
-      // width: 100%;
-    }
   }
 }
 

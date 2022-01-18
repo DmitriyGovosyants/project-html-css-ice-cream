@@ -108,6 +108,7 @@
   min-width: 62px;
 
   @include font-size(8, 10.42);
+  text-align: center;
 
   @include mq(desktop) {
     min-width: 104px;
@@ -411,7 +412,6 @@
   }
 }
 
-// heart
 .love-animation {
   position: absolute;
   bottom: -100px;

@@ -16,10 +16,12 @@
 .products__list {
   display: flex;
   justify-content: center;
+
   @include mq(mobile-only) {
     margin-top: 147px;
     flex-wrap: wrap;
   }
+
   @include mq(tablet) {
     margin-top: 150px;
     flex-basis: calc(100% / 3 - 40px);
@@ -37,15 +39,12 @@
   position: relative;
   border-radius: 24px;
   text-align: center;
+
   @include mq(mobile-only) {
     padding: 158px 40px 44px;
     &:not(:last-child) {
       margin-bottom: 127px;
     }
-  }
-
-  @include mq(mobile) {
-    width: 280px;
   }
 
   @include mq(tablet-only) {
