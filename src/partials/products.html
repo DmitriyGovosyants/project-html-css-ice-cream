@@ -6,8 +6,9 @@
         <li class="products__item products__item--first">
             <h3 class="products__title products__title--first">ice cream</h3>
             <p class="products__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
-            aliqua facilisis.</p>
-                <button class="button-arrow products__btn" type="button" aria-label="read-more">
+            aliqua facilisis.<span class="dots">.</span><span class="more">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
+            aliqua facilisis.</span></p>
+                <button class="myBtn button-arrow products__btn" type="button" aria-label="read-more">
             <svg class="button-arrow__icon" width="15" height="15">
                 <use href="./images/icons.svg#big-arrow-icon"></use>
             </svg>
@@ -16,8 +17,9 @@
         <li class="products__item products__item--second">
             <h3 class="products__title products__title--second">ice coffee</h3>
             <p class="products__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
-            aliqua facilisis.</p>
-            <button class="button-arrow products__btn" type="button" aria-label="read-more">
+            aliqua facilisis.<span class="dots">.</span><span class="more">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
+            aliqua facilisis.</span></p>
+                <button class="myBtn button-arrow products__btn" type="button" aria-label="read-more">
                 <svg class="button-arrow__icon" width="15" height="15">
                     <use href="./images/icons.svg#big-arrow-icon"></use>
                 </svg>
@@ -26,8 +28,9 @@
         <li class="products__item products__item--third">
             <h3 class="products__title products__title--third">milkshakes</h3>
             <p class="products__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
-            aliqua facilisis.</p>
-            <button class="button-arrow products__btn" type="button" aria-label="read-more">
+            aliqua facilisis.<span class="dots">.</span><span class="more">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
+            aliqua facilisis.</span></p>
+                <button class="myBtn button-arrow products__btn" type="button" aria-label="read-more">
                 <svg class="button-arrow__icon" width="15" height="15">
                     <use href="./images/icons.svg#big-arrow-icon"></use>
                 </svg>
@@ -35,4 +38,27 @@
         </li>
     </ul>
     </div>
+    <script>
+        const allButtons = document.querySelectorAll('.myBtn');
+        allButtons.forEach(function(btn){
+            btn.addEventListener('click', myFunction);
+        });
+        function myFunction(){
+            const allBtns = document.querySelectorAll(".myBtn");
+            const allDots = document.querySelectorAll(".dots");
+            const allMore = document.querySelectorAll(".more");
+
+            const btnText = allBtns[[...allBtns].indexOf(this)];
+            const dots = allDots[[...allBtns].indexOf(this)];
+            const moreText = allMore[[...allBtns].indexOf(this)];
+
+            if(dots.style.display === "none"){
+                dots.style.display = "inline";
+                moreText.style.display = "none";
+            } else{
+                dots.style.display = "none";
+                moreText.style.display = "inline";
+            }  
+        }
+    </script>
 </section>

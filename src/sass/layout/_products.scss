@@ -230,3 +230,7 @@
   transition: background-color var(--transition-time) var(--transition-function),
     color var(--transition-time) var(--transition-function);
 }
+
+.more {
+  display: none;
+}
