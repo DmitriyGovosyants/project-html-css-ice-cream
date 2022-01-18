@@ -17,7 +17,9 @@
         <p class="franchise-modal__text">By joining us now, you are becoming part of a large enterprise ecosystem around the world that has a real
             impact on
             the global economy.</p>
-        <form class="franchise-form">
+        <form class="franchise-form"
+            onsubmit="document.querySelector('.franchise-form__success-message').textContent = 'Well done!';"
+            target="formFrame">
             <label class="franchise-form__field">
                 Name
                 <span class="franchise-form__inner">
@@ -53,6 +55,7 @@
             <button class="button button--dark modal__button" type="submit">
                 Submit
             </button>
+            <div class="franchise-form__success-message"></div>
         </form>
     </div>
 </div>
