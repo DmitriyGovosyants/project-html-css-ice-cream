@@ -17,6 +17,10 @@
   transition: background-color var(--transition-time) var(--transition-function);
   cursor: pointer;
 
+  @include mq(mobile-only) {
+    @include visuallity-hidden();
+  }
+
   @include mq(tablet) {
     right: 40px;
     bottom: 20px;
