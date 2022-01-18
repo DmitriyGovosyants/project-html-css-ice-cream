@@ -1,12 +1,14 @@
 // buy
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-buy]'),
+    openModalBtnFirst: document.querySelector('[data-modal-open-buy-first]'),
+    openModalBtnSecond: document.querySelector('[data-modal-open-buy-second]'),
     closeModalBtn: document.querySelector('[data-modal-close-buy]'),
     modal: document.querySelector('[data-modal-buy]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtnFirst.addEventListener('click', toggleModal);
+  refs.openModalBtnSecond.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {

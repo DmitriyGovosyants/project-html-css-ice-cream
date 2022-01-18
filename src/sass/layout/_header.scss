@@ -167,6 +167,10 @@
   background-color: var(--bgc-mobile);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 
+  .mobile-menu__link:focus & {
+    transform: translateX(125%);
+  }
+
   &.is-open {
     transform: translateX(0);
 
