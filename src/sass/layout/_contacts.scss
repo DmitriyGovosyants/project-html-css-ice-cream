@@ -32,18 +32,18 @@
 }
 
 .contacts__back {
-  @include mq(desktop) {
-    width: 100%;
-    height: 100%;
+  // @include mq(desktop) {
+  //   width: 100%;
+  //   height: 100%;
 
-    background-image: url(/images/contacts/contacts.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+  //   background-image: url('../images/contacts/contacts.png');
+  //   background-repeat: no-repeat;
+  //   background-size: 100% 100%;
 
-    @include mq(retina) {
-      background-image: url(/images/contacts/contacts@2x.png);
-    }
-  }
+  //   @include mq(retina) {
+  //     background-image: url('../images/contacts/contacts@2x.png');
+  //   }
+  // }
 }
 
 .contacts-list {
@@ -51,7 +51,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
 
   @include mq(tablet) {
     display: flex;
@@ -60,8 +59,6 @@
 }
 
 .contacts__item {
-  width: 100%;
-  height: 100%;
   padding: 43px 20px 43px 20px;
 
   background: var(--bgc-main);
@@ -70,8 +67,29 @@
   border-radius: 24px;
   transition: transform var(--transition-time) var(--transition-function);
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  @include mq(mobile-only) {
+    max-width: 220px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include mq(tablet) {
+    flex-basis: calc((100% - 40px) / 3);
+    padding: 50px 32px 50px 31px;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  @include mq(desktop) {
+    flex-basis: calc((100% - 60px) / 3);
+    padding: 51px 43px 50px 62px;
+
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
   }
 
   &:hover,
@@ -79,26 +97,6 @@
     @include mq(desktop) {
       transform: scale(1.1);
     }
-  }
-
-  @media screen and (max-width: 767px) {
-    max-width: 220px;
-  }
-  @include mq(tablet) {
-    max-width: 220px;
-    padding: 50px 30px 50px 30px;
-
-    &:not(:last-child) {
-      margin-bottom: 0px;
-    }
-    &:not(:first-child) {
-      margin-left: 20px;
-    }
-  }
-
-  @include mq(desktop) {
-    max-width: 330px;
-    margin-bottom: 0px;
   }
 }
 
@@ -302,8 +300,7 @@
   min-width: 161px;
   height: 44px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
+  @include font-size(16, 21);
 }
 
 .contacts-btn__link-red {
@@ -345,7 +342,6 @@
 .contacts-btn__icon-red {
   width: 10px;
   height: 10px;
-  margin-left: 15px;
   margin-left: 13px;
 
   stroke: currentColor;
