@@ -1,0 +1,21 @@
+.section__gradient {
+  @include mq(desktop) {
+    background-color: var(--bgc-second);
+    background-image: linear-gradient(to bottom, var(--bgc-second) 80%, var(--bgc-main) 80%);
+  }
+}
+
+.section__thumb {
+  @include mq(desktop) {
+    background-image: url('../images/about/milk-layout-x1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top 315px center;
+    @include mq(retina) {
+      background-image: url('../images/about/milk-layout-x2.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top 315px center;
+    }
+  }
+}
