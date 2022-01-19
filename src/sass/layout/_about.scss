@@ -3,16 +3,29 @@
   padding-bottom: 20px;
   background-color: var(--bgc-second);
 
+  @include mq(desktop) {
+    background-image: url('../images/about/milk-layout-x1.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top 342px center;
+    @include mq(retina) {
+      background-image: url('../images/about/milk-layout-x2.png');
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: top 342px center;
+    }
+  }
+
   @include mq(mobile-only) {
     background-image: url('../images/about/milk-layout-mob-x1.png');
-    background-size: contain;
+    background-size: auto;
     background-repeat: no-repeat;
-    background-position: bottom 80px center;
+    background-position: bottom 81px center;
     @include mq(retina) {
       background-image: url('../images/about/milk-layout-mob-x2.png');
-      background-size: contain;
+      background-size: auto;
       background-repeat: no-repeat;
-      background-position: bottom 80px center;
+      background-position: bottom 81px center;
     }
   }
 }
