@@ -35,12 +35,6 @@
     }
   }
 
-  @include mq(mobile) {
-    width: 100%;
-    padding: 0 100px;
-    text-align: center;
-  }
-
   @include mq(tablet) {
     flex-basis: calc((100% - 120px) / 3);
     text-align: start;
@@ -99,11 +93,6 @@
 
   background-repeat: no-repeat;
   background-size: contain;
-
-  @include mq(mobile) {
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   @include mq(tablet) {
     margin-left: 0;
