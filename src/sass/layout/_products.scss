@@ -78,7 +78,7 @@
 
 .products__title {
   position: relative;
-
+  margin-bottom: 30px;
   font-family: Titan One, sans-serif;
   font-weight: 400;
   text-align: center;
@@ -119,9 +119,10 @@
 
   &::after {
     content: ' ';
-    display: flex;
-    margin: 30px auto;
-
+    display: block;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
     background-image: url('../images/product/points1x.png');
     @include mq(retina) {
       background-image: url('../images/product/points2x.png');
@@ -135,7 +136,7 @@
     background-color: transparent;
 
     @include mq(desktop) {
-      margin: 32px auto;
+      margin: 32px auto 0;
     }
   }
 }
