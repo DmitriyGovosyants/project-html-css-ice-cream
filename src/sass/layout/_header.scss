@@ -1,3 +1,7 @@
+.body-overflow {
+  overflow: hidden;
+}
+
 .header {
   @include mq(mobile-only) {
     position: fixed;
