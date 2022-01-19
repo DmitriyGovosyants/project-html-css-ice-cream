@@ -93,6 +93,10 @@
     margin-bottom: 17px;
   }
 
+  @include mq(tablet) {
+    padding-top: 50px;
+  }
+
   @include mq(tablet-only) {
     margin-bottom: 65px;
   }
