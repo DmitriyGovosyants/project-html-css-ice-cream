@@ -13,6 +13,7 @@
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+    document.body.classList.toggle ('body-overflow')
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
