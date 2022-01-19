@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
             // инициализация слайдера
             var slider = new SimpleAdaptiveSlider('.slider', {
-                // autoplay: true,
+                autoplay: true,
                 interval: 5000,
                 swipe: true,
             });
