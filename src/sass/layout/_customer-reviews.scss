@@ -67,11 +67,16 @@
     &::after {
         content: '';
         position: absolute;
-        width: 64px;
-        height: 8px;
+        width: 32px;
+        height: 4px;
         margin-top: 30px;
-        background: url(../images/customer-reviews/three-dots.png);
+        background: url(../images/customer-reviews/three-dots-x1.png);
         transform: translateX(-50%);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background: url(../images/customer-reviews/three-dots.png);
+            width: 64px;
+            height: 8px;
+        }
 
         @include mq(tablet) {
             margin-top: 24px;
