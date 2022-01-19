@@ -15,13 +15,40 @@
                 </li>
             </ul>
             <div class="hero__description">
-                <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                <!-- <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 </p>
                 <button class="button-arrow button-arrow--small" type="button" aria-label="read-more">
                     <svg class="button-arrow__icon" width="10" height="10">
                         <use href="./images/icons.svg#big-arrow-icon"></use>
                     </svg>
+                </button> -->
+                <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et<span id="points">.</span><span id="next">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</span>
+                </p>
+                <button onclick="readMore()" id="moreBtn" 
+                class="button-arrow button-arrow--small" type="button" aria-label="read-more">
+                <svg class="button-arrow__icon" width="10" height="10">
+                    <use href="./images/icons.svg#big-arrow-icon"></use>
+                </svg>
                 </button>
+
+                <script>
+                    function readMore() {
+                            const points = document.getElementById("points");
+                            const moreText = document.getElementById("next");
+                            const btnText = document.getElementById("moreBtn");
+
+                            if (points.style.display === "none") {
+                                points.style.display = "inline";
+                                moreText.style.display = "none";
+                            } else {
+                                points.style.display = "none";
+                                moreText.style.display = "inline";
+                            }
+                        }
+
+                </script>
+                
             </div>
         </div>
         <div class="hero__right">
