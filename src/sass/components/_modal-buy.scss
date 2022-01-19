@@ -127,5 +127,7 @@
 }
 
 .buy-form__success-message {
-  font-size: 40px;
+  margin-top: 20px;
+  @include font-size(20, 20, 0.03);
+  color: var(--accent-color);
 }
