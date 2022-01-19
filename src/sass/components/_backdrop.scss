@@ -11,8 +11,8 @@
   background-color: rgba(0, 0, 0, 0.35);
 
   overflow-y: scroll;
-  transition: opacity var(--animation-duration) var(--animation-timing-function),
-    visibility var(--animation-duration) var(--animation-timing-function);
+  transition: opacity var(--transition-time) var(--transition-function),
+    visibility var(--transition-time) var(--transition-function);
 
   &--hidden {
     opacity: 0;
