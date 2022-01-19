@@ -71,7 +71,6 @@
 }
 .about__text-container {
   margin: 0 auto;
-  padding-top: 50px;
 
   @include mq(mobile-only) {
     padding-left: 30px;
@@ -88,8 +87,18 @@
 
 .about__text {
   font-weight: 500;
+
   @include mq(mobile-only) {
     @include font-size(12, 19.44);
+    margin-bottom: 17px;
+  }
+
+  @include mq(tablet-only) {
+    margin-bottom: 65px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 38px;
   }
 }
 
@@ -128,18 +137,12 @@
 .about__text-second {
   color: var(--text-second-color);
 
-  @include mq(mobile-only) {
-    margin-bottom: 17px;
-  }
-
   @include mq(tablet-only) {
     @include font-size(14, 24.64, 0.04);
-    margin-bottom: 65px;
   }
 
   @include mq(desktop) {
     @include font-size(14, 27.16, 0.04);
-    margin-bottom: 38px;
   }
 }
 .about__button {
