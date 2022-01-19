@@ -136,7 +136,7 @@
     background-color: transparent;
 
     @include mq(desktop) {
-      margin: 32px auto;
+      margin: 32px auto 0;
     }
   }
 }
