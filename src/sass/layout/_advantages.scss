@@ -1,3 +1,4 @@
+// advantages
 .advantages {
   padding-top: 20px;
   padding-bottom: 50px;
@@ -92,7 +93,6 @@
 .advantages__discription::before {
   content: '';
   display: block;
-
   width: 50px;
   height: 50px;
   margin-bottom: 20px;
@@ -118,7 +118,10 @@
 
 .advantages__discription-first::before {
   background-image: url('../images/advantages/cow-x1.png');
-
+  @include mq(mobile-only) {
+    width: 33px;
+    height: 50px;
+  }
   @include mq(retina) {
     background-image: url('../images/advantages/cow-x2.png');
   }
@@ -134,7 +137,10 @@
 
 .advantages__discription-third::before {
   background-image: url('../images/advantages/heart-x1.png');
-
+  @include mq(mobile-only) {
+    width: 44px;
+    height: 50px;
+  }
   @include mq(retina) {
     background-image: url('../images/advantages/heart-x2.png');
   }
