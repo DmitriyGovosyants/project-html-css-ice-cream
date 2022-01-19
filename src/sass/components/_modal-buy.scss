@@ -7,6 +7,11 @@
     transform: scale(1.1);
   }
 
+  .modal--hidden & {
+    transform: scale(0);
+    transition: transform var(--transition-time) linear;
+  }
+
   @include mq(mobile-only) {
     max-width: 450px;
     margin-left: auto;
@@ -18,7 +23,7 @@
     left: 50%;
 
     width: 100%;
-    max-width: 450px;
+    max-width: 550px;
 
     transform: translate(-50%, -50%) scale(1);
 
@@ -38,10 +43,6 @@
     .backdrop--hidden & {
       transform: scale(1.1);
     }
-  }
-
-  @include mq(desktop) {
-    max-width: 550px;
   }
 }
 
@@ -68,12 +69,22 @@
 }
 
 .buy-form__product {
+  padding: 0 20px;
   margin-bottom: 20px;
+
+  @include mq(tablet) {
+    padding: 0 40px;
+  }
 }
 
 .buy-form__text {
   margin-bottom: 5px;
-  @include font-size(14);
+  @include font-size(14, 12, 0.02);
+
+  @include mq(tablet) {
+    margin-bottom: 10px;
+    @include font-size(16, 14, 0.03);
+  }
 }
 
 .buy-form__input,
@@ -103,7 +114,7 @@
 }
 
 .buy-form__quantity {
-  max-width: 40px;
+  max-width: 50px;
 }
 
 .buy-form__input {
@@ -123,9 +134,72 @@
 
 .buy-form__product-item {
   display: block;
-  margin-bottom: 5px;
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  @include mq(tablet) {
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:last-child {
+      width: 160px;
+    }
+  }
 }
 
 .buy-form__success-message {
-  font-size: 40px;
+  margin-top: 20px;
+  @include font-size(30, 30, 0.02);
+  color: var(--accent-color);
+}
+
+.buy-modal__icon-wrap {
+  position: absolute;
+  top: 45%;
+  right: 42%;
+  transform: translate(-50%, -50%);
+
+  @include mq(mobile-only) {
+    width: 100px;
+    height: 100px;
+  }
+
+  @include mq(desktop) {
+    top: 50%;
+    right: 48%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.buy-modal__icon-wrap {
+  pointer-events: none;
+  transform: rotate(45deg);
+  transform: scale(0);
+  transition: transform var(--transition-time) linear;
+
+  .modal--hidden & {
+    transform: scale(1);
+    animation: animate-icon 700ms linear var(--transition-time) 1 forwards;
+  }
+
+  @keyframes animate-icon {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    100% {
+      transform: translate(1000px, -700px);
+    }
+  }
+}
+
+.backdrop {
+  & .modal--hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: 0;
+  }
 }
