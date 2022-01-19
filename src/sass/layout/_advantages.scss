@@ -5,9 +5,7 @@
   width: 100%;
   margin: 0 auto;
 
-  @include mq(notDesktop) {
-    background-color: var(--bgc-second);
-  }
+  background-color: var(--bgc-second);
 
   @include mq(tablet) {
     padding-top: 33px;
