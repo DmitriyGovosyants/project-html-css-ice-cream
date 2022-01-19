@@ -4,24 +4,15 @@
     openModalBtnFirst: document.querySelector('[data-modal-open-buy-first]'),
     openModalBtnSecond: document.querySelector('[data-modal-open-buy-second]'),
     closeModalBtn: document.querySelector('[data-modal-close-buy]'),
-    closeModalSubmit: document.querySelector('[data-modal-submit]'),
 
     modal: document.querySelector('[data-modal-buy]'),
-    form:  document.querySelector('[data-form-buy]'),
   };
 
   refs.openModalBtnFirst.addEventListener('click', toggleModal);
   refs.openModalBtnSecond.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalSubmit.addEventListener('click', toggleSubmit);
-
   
   function toggleModal() {
-    document.body.classList.toggle('modal-open');
-    refs.modal.classList.toggle('backdrop--hidden');
-  }
-
-  function toggleSubmit() {
     document.body.classList.toggle('modal-open');
     refs.modal.classList.toggle('backdrop--hidden');
   }
