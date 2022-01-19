@@ -35,6 +35,12 @@
     }
   }
 
+  @include mq(mobile) {
+    width: 100%;
+    padding: 0 100px;
+    text-align: center;
+  }
+
   @include mq(tablet) {
     flex-basis: calc((100% - 120px) / 3);
     text-align: start;
@@ -94,6 +100,11 @@
   background-repeat: no-repeat;
   background-size: contain;
 
+  @include mq(mobile) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @include mq(tablet) {
     margin-left: 0;
     margin-right: 0;
@@ -107,7 +118,10 @@
 
 .advantages__discription-first::before {
   background-image: url('../images/advantages/cow-x1.png');
-
+  @include mq(mobile-only) {
+    width: 33px;
+    height: 50px;
+  }
   @include mq(retina) {
     background-image: url('../images/advantages/cow-x2.png');
   }
@@ -123,7 +137,10 @@
 
 .advantages__discription-third::before {
   background-image: url('../images/advantages/heart-x1.png');
-
+  @include mq(mobile-only) {
+    width: 44px;
+    height: 50px;
+  }
   @include mq(retina) {
     background-image: url('../images/advantages/heart-x2.png');
   }
