@@ -202,17 +202,17 @@
 
     opacity: 0.5;
     user-select: none;
+
+    &:hover {
+        color: #fff;
+        background-color: var(--bgc-third);
+        text-decoration: none;
+        opacity: 1;
+    }
 }
 
 .slider__control_show {
     display: flex;
-}
-
-.slider__control:hover {
-    color: #fff;
-    background-color: var(--bgc-third);
-    text-decoration: none;
-    opacity: 1;
 }
 
 .slider__control_prev {
