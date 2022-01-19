@@ -103,7 +103,7 @@
 }
 
 .buy-form__quantity {
-  max-width: 40px;
+  max-width: 50px;
 }
 
 .buy-form__input {
@@ -124,10 +124,19 @@
 .buy-form__product-item {
   display: block;
   margin-bottom: 5px;
+  min-width: 150px;
+
+  &:last-child {
+    padding-left: 8px;
+
+    @include mq(mobile-only) {
+      padding-left: 9px;
+    }
+  }
 }
 
 .buy-form__success-message {
   margin-top: 20px;
-  @include font-size(20, 20, 0.03);
+  @include font-size(30, 20, 0.03);
   color: var(--accent-color);
 }
