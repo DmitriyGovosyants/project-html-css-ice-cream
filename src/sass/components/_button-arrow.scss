@@ -12,12 +12,13 @@
   color: var(--accent-color);
 
   transition: color var(--transition-time) var(--transition-function),
-    background-color var(--transition-time) var(--transition-function);
+    background-color var(--transition-time) var(--transition-function),
+    transform var(--transition-time) var(--transition-function);
 
-  &:hover,
-  &:focus {
+  &:active {
+    transform: rotate(-90deg);
     background-color: var(--accent-color);
-    color: var(--bgc-main);
+    color: var(--text-fourth-color);
   }
 
   &--small {
