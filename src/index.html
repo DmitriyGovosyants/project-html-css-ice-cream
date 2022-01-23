@@ -42,7 +42,10 @@
     <!-- Скрипт Google карты -->
     <!-- <script src="./js/map.js"></script> -->
     <script>
-      function initMap() {
+      function initMap() {}
+
+      $(() => {
+        function initMap() {
           let element = document.getElementById('map');
           const options = {
             zoom: 5,
@@ -217,6 +220,7 @@
             }
           }
         }
+      })
     </script>
     <script defer async
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgUsCs0X_BkvnJDOyTL414HV-J-gikNaI&region=US&language=en&callback=initMap&v=weekly"></script>
