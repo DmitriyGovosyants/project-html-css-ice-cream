@@ -1,5 +1,14 @@
 # Ice Cream
-(training command project)
+
+## Developers
+
+Dmitriy Govosyants
+Nikita Durnev
+Markiyan Yatsulchak
+Andrey Tsapkov
+Svetlana Emelianova
+Vladimir Pavlov
+Yevhenii Yakovlev
 
 ## Наше приложение предоставляет клиенту возможность:
 
