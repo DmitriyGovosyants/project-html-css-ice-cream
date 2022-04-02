@@ -10,13 +10,13 @@
 - Vladimir Pavlov
 - Yevhenii Yakovlev
 
-## Наше приложение предоставляет клиенту возможность:
+## Our application gives the customer the opportunity to:
 
-- Познакомиться с нашей компанией
-- Произвести заказ мороженного
-- Посмотреть местонахождение точек продажи
-- Связаться с нами по вопросам франшизы
-- Получить удовольствие от посещения и вернуться еще!
+Get to know our company
+Order ice cream
+See shop location
+Contact us for franchise issues
+Enjoy a visit and come back again!
 
 ## [Видео презентации](https://drive.google.com/file/d/1-Pwj0071AltTa2DzQ21zaor8QIgs1Hdy/view?usp=sharing)
 
