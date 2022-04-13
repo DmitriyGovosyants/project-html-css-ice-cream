@@ -1,6 +1,6 @@
-const allBtns = document.querySelectorAll(".myBtn");
-const allDots = document.querySelectorAll(".dots");
-const allMore = document.querySelectorAll(".more");
+const allBtns = document.querySelectorAll(".js-more-btn");
+const allDots = document.querySelectorAll(".js-dots");
+const allMore = document.querySelectorAll(".js-more");
 
 allBtns.forEach(btn => btn.addEventListener('click', toggleMoreText));
 
