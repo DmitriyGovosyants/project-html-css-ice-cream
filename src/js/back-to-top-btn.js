@@ -1,16 +1,22 @@
-$(function () {
-        $('.scrollup').click(function() {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 500);
-        })
-    })
+const showOnPx = 300;
+const backToTopBtn = document.querySelector(".scrollup");
 
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 300) {
-        $('.scrollup').fadeIn();
-    }
-    else {
-        $('.scrollup').fadeOut();
-    }
-});
+document.addEventListener("scroll", toggleBackToTopBtn);
+backToTopBtn.addEventListener("click", goToTop);
+
+
+function toggleBackToTopBtn() {
+  if (scrollContainer().scrollTop > showOnPx) {
+    backToTopBtn.classList.remove("is-hidden")
+  } else {
+    backToTopBtn.classList.add("is-hidden")
+  }
+};
+
+function scrollContainer() {
+  return document.documentElement || document.body;
+};
+
+function goToTop(e) {
+  document.body.scrollIntoView();
+};

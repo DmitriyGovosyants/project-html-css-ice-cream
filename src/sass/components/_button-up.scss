@@ -3,7 +3,6 @@
   right: 20px;
   bottom: 10px;
   z-index: 10;
-  display: none;
 
   padding: 7.5px 10px;
 
@@ -30,8 +29,12 @@
     right: 60px;
     bottom: 40px;
   }
+
+  &:hover {
+    background-color: var(--accent-color);
+  }
 }
 
-.scrollup:hover {
-  background-color: var(--accent-color);
+.is-hidden {
+  display: none;
 }
