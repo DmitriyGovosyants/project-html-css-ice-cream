@@ -6,6 +6,7 @@ const mobileMenuNav = document.querySelector(".mobile-menu__list");
 openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
 mobileMenuNav.addEventListener('click', onClickAnchorMobileMenuClose);
+document.addEventListener('click', onClickOutsideMobileMenuClose);
 window.matchMedia('(min-width: 1280px)').addEventListener('change', onTabletMQMobileMenuClose);
 
 function toggleMenu() {
@@ -18,6 +19,16 @@ function toggleMenu() {
 function onClickAnchorMobileMenuClose(e) {
   if (e.target.nodeName !== 'A') return;  
   toggleMenu();
+};
+
+function onClickOutsideMobileMenuClose(e) {
+  const targetMobileMenu = e.target.closest('.mobile-menu');
+  const targetMobileMenuOpenBtn = e.target.classList.contains('js-open-btn');
+  const mobileMenuIsOpen = document.querySelector('.mobile-menu.is-open');
+
+  if (!targetMobileMenu && !targetMobileMenuOpenBtn && mobileMenuIsOpen) {
+    toggleMenu();
+  }
 };
 
 function onTabletMQMobileMenuClose(e) {
