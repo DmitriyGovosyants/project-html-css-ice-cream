@@ -1,73 +1,27 @@
-// buy
-(() => {
-  const refs = {
-    openModalBtnFirst: document.querySelector('[data-modal-open-buy-first]'),
-    openModalBtnSecond: document.querySelector('[data-modal-open-buy-second]'),
-    closeModalBtn: document.querySelector('[data-modal-close-buy]'),
 
-    modal: document.querySelector('[data-modal-buy]'),
-  };
+const openAndCloseModalBtn = document.querySelectorAll('.js-modal-btn');
+const modalBuy = document.querySelector('.js-modal-buy');
+const modalFranchise = document.querySelector('.js-modal-franchise');
+const modalLocation = document.querySelector('.js-modal-location');
+const modalAbout = document.querySelector('.js-modal-about');
 
-  refs.openModalBtnFirst.addEventListener('click', toggleModal);
-  refs.openModalBtnSecond.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-  
-  function toggleModal() {
-    document.body.classList.toggle('modal-open');
-    refs.modal.classList.toggle('backdrop--hidden');
+openAndCloseModalBtn.forEach(btn => btn.addEventListener('click', toggleModal));
+
+function toggleModal(e) {
+  document.body.classList.toggle('modal-open');
+
+  const activeTarget = e.currentTarget.classList;
+
+  if (activeTarget.contains('js-modal-btn-buy')) {
+    return modalBuy.classList.toggle('backdrop--hidden');
   }
-})();
-
-// read more
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-about]'),
-    closeModalBtn: document.querySelector('[data-modal-close-about]'),
-    modal: document.querySelector('[data-modal-about]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    document.body.classList.toggle('modal-open');
-    refs.modal.classList.toggle('backdrop--hidden');
+  if (activeTarget.contains('js-modal-btn-franchise')) {
+    return modalFranchise.classList.toggle('backdrop--hidden');
   }
-  
-})();
-
-// location
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-location]'),
-    closeModalBtn: document.querySelector('[data-modal-close-location]'),
-    modal: document.querySelector('[data-modal-location]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    document.body.classList.toggle('modal-open');    
-    refs.modal.classList.toggle('backdrop--hidden');
+  if (activeTarget.contains('js-modal-btn-location')) {
+    return modalLocation.classList.toggle('backdrop--hidden');
   }
-})();
-
-// franchise
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open-franchise]'),
-    closeModalBtn: document.querySelector('[data-modal-close-franchise]'),
-    modal: document.querySelector('[data-modal-franchise]'),
-  };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    document.body.classList.toggle('modal-open');
-    refs.modal.classList.toggle('backdrop--hidden');
+  if (activeTarget.contains('js-modal-btn-about')) {
+    return modalAbout.classList.toggle('backdrop--hidden');
   }
-})();
-
-
+}
