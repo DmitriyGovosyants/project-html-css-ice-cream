@@ -7,11 +7,11 @@ document.addEventListener('keydown', onModalClose);
 
 function onModalClose(e) {
     if (e.keyCode === 27 && document.body.classList.contains('modal-open')) {
-    document.body.classList.remove('modal-open');
-    modalBuy.classList.add('backdrop--hidden');
-    modalFranchise.classList.add('backdrop--hidden');
-    modalLocation.classList.add('backdrop--hidden');
-    modalAbout.classList.add('backdrop--hidden');
-    document.querySelector('.video-setup').pause();
+        document.body.classList.remove('modal-open');
+        modalBuy.classList.add('backdrop--hidden');
+        modalFranchise.classList.add('backdrop--hidden');
+        modalLocation.classList.add('backdrop--hidden');
+        modalAbout.classList.add('backdrop--hidden');
+        document.querySelector('.video-setup').pause();
   }
 };
